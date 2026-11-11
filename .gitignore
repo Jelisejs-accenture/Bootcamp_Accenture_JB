@@ -1,0 +1,5 @@
+.venv/
+.venv-transformers/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
