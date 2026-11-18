@@ -1,0 +1,15 @@
+﻿# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local vector database
+chroma_db/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp

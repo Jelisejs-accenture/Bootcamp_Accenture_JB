@@ -1,0 +1,132 @@
+{
+  "question": "What action items and responsibilities were recorded in the meeting notes, and how do they relate to the company's business priorities?\nGroup the action items by responsible owner. Include concrete tasks and relevant business priorities. Cite the meeting notes with [meeting_notes.pdf, p. X]. Avoid repetition and unrelated policies.",
+  "answer": "Based on the provided meeting notes, here are the recorded action items organized by responsible owner, categorized by their relevance to the company's business priorities (Lisbon expansion, CRM implementation, Product launch, Security, and AI roles).\n\n### 1. Lisbon Office Expansion & HR Strategy\n**Owner:** Elena Rossi, Marcus Weber, Aisha Patel\n*   **Action:** Finalize Lisbon office manager job description.\n    *   *Priority:* Securing leadership for the new engineering hub.\n    *   *Source:* [meeting_notes.pdf, p. 2]\n*   **Action:** Identify 3-5 roles suitable for Lisbon placement.\n    *   *Priority:* Aligning headcount with the expansion plan (45-80 capacity).\n    *   *Source:* [meeting_notes.pdf, p. 2]\n*   **Action:** Draft Lisbon compensation bands.\n    *   *Priority:* Leveraging lower cost base (35-40% lower than Munich) to attract talent.\n    *   *Source:* [meeting_notes.pdf, p. 2]\n*   **Action:** Update employee handbook with new remote work policy.\n    *   *Priority:* Managing expectations regarding the HQ/Remote split and Lisbon operations.\n    *   *Source:* [meeting_notes.pdf, p. 9]\n\n### 2. CRM Vendor Selection & Implementation\n**Owner:** James Park, Aisha Patel, Elena Rossi\n*   **Action:** Launch readiness checklist for future releases.\n    *   *Priority:* Ensuring smooth transition to the new CRM system post-go-live.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n*   **Action:** Assign integration engineer for HubSpot project (Part-time).\n    *   *Priority:* Technical support for API integrations between ProjectHub and CRM.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n\n### 3. Product Launch Review & Security Mandate\n**Owner:** Elena Rossi, Marcus Weber, Aisha Patel\n*   **Action:** Develop engineering-specific module covering secure coding practices and dependency management.\n    *   *Priority:* Strengthening security posture beyond the mandatory MFA policy.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n*   **Action:** Launch readiness checklist for future releases (See CRM section).\n    *   *Priority:* Ensuring system stability post-launch.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n\n### 4. Security Policy & Training\n**Owner:** Aisha Patel, Marcus Weber\n*   **Action:** Select a vendor for security training (shortlist of 3).\n    *   *Priority:* Implementing mandatory security awareness training as part of the new CRM rollout.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n*   **Action:** Secure coding training module outline (for Marcus's team).\n    *   *Priority:* Addressing the gap in secure coding practices identified during the security review.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n\n### 5. AI Roles & Compensation\n**Owner:** Aisha Patel, Sarah Chen\n*   **Action:** Increase compensation band for AI/ML specialists by 10-15%.\n    *   *Priority:* Attracting top talent to the challenging AI roles in Lisbon and Munich.\n    *   *Source:* [meeting_notes.pdf, p. 9]\n\n### 6. CRM Decision & Go-Live Planning\n**Owner:** James Park, Marcus Weber, Elena Rossi\n*   **Action:** Begin implementation planning with a target go-live of April 15.\n    *   *Priority:* Moving to the new CRM system (HubSpot) as decided after TCO analysis.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n*   **Action:** Assign backend engineer for HubSpot project support.\n    *   *Priority:* Ensuring technical feasibility of API integrations.\n    *   *Source:* [meeting_notes.pdf, p. 5]\n\n### 7. Project Launch Results & Data Migration\n**Owner:** Elena Rossi, James Park\n*   **Action:** Deploy v3.2 reporting performance fix (targeting Feb 20 release).\n    *   *Priority:* Resolving critical bugs affecting Enterprise tier customers (>50k tasks).\n    *   *Source:* [meeting_notes.pdf, p. 3]\n*   **Action:** Archive pre-2024 historical pipeline data separately.\n    *   *Priority:* Ensuring clean migration of new CRM data without disrupting current pipelines.\n    *   *Source:* [meeting_notes.pdf, p. 9]\n\n### Summary of Business Priorities Addressed\nThese",
+  "model": "qwen3.5:2b-q4_K_M",
+  "thinking": false,
+  "finish_reason": "length",
+  "prompt_tokens": 2691,
+  "generated_tokens": 1024,
+  "latency_seconds": 160.23,
+  "retrieved_chunks": [
+    {
+      "id": "meeting_notes_p2_c0",
+      "text": "Marcus noted that we should consider whether some of the AI roles could be\nbased in Lisbon to take advantage of the lower cost base. Elena agreed to\nevaluate this.\n2. Lisbon Office Expansion\nSarah presented the business case for opening a second European engineering\nhub in Lisbon. Key points:\nLease signed for a 2,000 sqm space in Parque das Nacoes, occupancy\nstarting April 1\nInitial capacity for 45 people, expandable to 80\nAverage engineering salary in Lisbon is roughly 35-40% lower than Munich\nStrong local talent pool from IST and University of Lisbon\nPortugal's favorable tax regime for tech companies\nJames asked whether there would be a sales presence in Lisbon. Sarah said not\ninitially -- the focus is engineering and potentially some customer support roles in\nH2.\nElena raised concerns about timezone fragmentation. Munich, Milan, London, and",
+      "source": "meeting_notes.pdf",
+      "page": 2,
+      "chunk": 0,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p2_c1",
+      "text": "H2.\nElena raised concerns about timezone fragmentation. Munich, Milan, London, and\nnow Lisbon -- she wants to make sure core collaboration hours remain intact.\nAfter discussion, the team agreed on a core hours policy of 10:00--15:00 CET\nfor all cross-office meetings.\nDecision: Lisbon office expansion approved. Budget of EUR 850K for buildout\nand first-year operations.\nAction Items: | # | Action | Owner | Deadline | |---|--------|-------|----------| | 1.1 |\nFinalize Lisbon office manager job description | Aisha | Jan 20 | | 1.2 | Identify 3-5\nroles suitable for Lisbon placement | Elena + Marcus | Jan 31 | | 1.3 | Draft Lisbon\ncompensation bands | Aisha | Feb 5 | | 1.4 | Revised Q1 recruiting timeline | Aisha\n| Jan 22 | | 1.5 | AI specialist job descriptions finalized | Elena | Jan 19 |\n3. CRM Vendor Selection\nJames presented the shortlist for replacing our current CRM (Pipedrive). Three",
+      "source": "meeting_notes.pdf",
+      "page": 2,
+      "chunk": 1,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p2_c2",
+      "text": "3. CRM Vendor Selection\nJames presented the shortlist for replacing our current CRM (Pipedrive). Three\nvendors evaluated: Salesforce, HubSpot Enterprise, and Freshsales.\nJames's recommendation: Salesforce. Reasoning -- better enterprise reporting,\nstronger integration ecosystem, and most of our larger prospects expect us to be\non Salesforce. Estimated cost: EUR 180K/year.\n• \n• \n• \n• \n•",
+      "source": "meeting_notes.pdf",
+      "page": 2,
+      "chunk": 2,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p3_c0",
+      "text": "Marcus pushed back on Salesforce, arguing it is over-engineered for our\ncurrent size and the implementation timeline (4-6 months) would disrupt Q2\nselling. He suggested HubSpot Enterprise as a middle ground -- faster\nimplementation (6-8 weeks), lower cost (EUR 95K/year), and good enough\nreporting.\nSarah asked for a more detailed TCO comparison including implementation\nconsulting fees. She is leaning toward HubSpot but wants data before\ncommitting.\nDecision: Deferred to February meeting. James to prepare a full TCO analysis\nincluding implementation costs, training time, and data migration effort.\nAction Items: | # | Action | Owner | Deadline | |---|--------|-------|----------| | 1.6 | Full\nCRM TCO comparison (3-year) | James | Feb 5 | | 1.7 | Reference calls with 2\nHubSpot customers in B2B SaaS | James | Feb 10 |\nMeeting 2: Product Launch Review & Policy\nUpdates",
+      "source": "meeting_notes.pdf",
+      "page": 3,
+      "chunk": 0,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p3_c1",
+      "text": "HubSpot customers in B2B SaaS | James | Feb 10 |\nMeeting 2: Product Launch Review & Policy\nUpdates\nDate: February 12, 2026 Time: 10:00 -- 12:30 CET Location: Conference Room\nA (Munich HQ) / Teams hybrid Attendees: - Sarah Chen (CEO) -- in person -\nMarcus Weber (CTO) -- in person - Elena Rossi (VP Engineering) -- in person\n(visiting Munich) - James Park (VP Sales) -- remote (London) - Aisha Patel (Head of\nHR) -- in person\n1. ProjectHub v3.2 Launch Results\nElena presented the results from the v3.2 launch (shipped January 28, two weeks\nbehind original schedule).\nKey metrics (first 2 weeks post-launch): - 89% of existing customers\nupgraded within the first week (target was 75%) - New signups up 22% week-\nover-week vs. pre-launch baseline - 3 critical bugs reported, all patched within 48\nhours - Customer satisfaction survey: 4.2/5.0 (up from 3.8 on v3.1) - The new",
+      "source": "meeting_notes.pdf",
+      "page": 3,
+      "chunk": 1,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p3_c2",
+      "text": "hours - Customer satisfaction survey: 4.2/5.0 (up from 3.8 on v3.1) - The new\nreal-time collaboration feature is the most-used new capability, with 67% of\nactive workspaces enabling it\nNotable issues: The advanced reporting module had performance problems for\ncustomers with >50,000 tasks. Elena said the team has a fix in progress\ntargeting February 20 release. Marcus added that this affected roughly 12% of\nEnterprise tier customers and several had opened support tickets.",
+      "source": "meeting_notes.pdf",
+      "page": 3,
+      "chunk": 2,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p5_c0",
+      "text": "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency\nmanagement. He mentioned that the current IT security policy already requires\npassword rotation every 90 days and MFA on all systems, but training has been\nad hoc until now.\nDecision: Security training mandate approved. Aisha to select a vendor and\nhave the program ready to launch by April 1. Engineering-specific module to be",
+      "source": "meeting_notes.pdf",
+      "page": 5,
+      "chunk": 0,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p5_c1",
+      "text": "have the program ready to launch by April 1. Engineering-specific module to be\ndeveloped internally by Marcus's team.\n4. CRM Decision (follow-up)\nJames presented the TCO analysis as requested. After thorough evaluation: -\nSalesforce 3-year TCO: EUR 780K (including EUR 120K implementation) -\nHubSpot 3-year TCO: EUR 385K (including EUR 40K implementation) - Freshsales\n3-year TCO: EUR 240K (including EUR 25K implementation)\nAfter discussion, the team agreed that Freshsales lacks the enterprise capabilities\nneeded as we scale. The real choice is between Salesforce and HubSpot.\nDecision: HubSpot Enterprise selected. James to begin implementation planning\nwith a target go-live of April 15. Marcus to assign a backend engineer part-time\nto support API integrations with ProjectHub.\nAction Items: | # | Action | Owner | Deadline | |---|--------|-------|----------| | 2.1 |",
+      "source": "meeting_notes.pdf",
+      "page": 5,
+      "chunk": 1,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p5_c2",
+      "text": "to support API integrations with ProjectHub.\nAction Items: | # | Action | Owner | Deadline | |---|--------|-------|----------| | 2.1 |\nLaunch readiness checklist for future releases | Elena | Feb 28 | | 2.2 | Pricing\nscenario modeling (EUR 35/37/39) | James | Mar 1 | | 2.3 | Security training\nvendor selection (shortlist of 3) | Aisha | Feb 28 | | 2.4 | Secure coding training\nmodule outline | Marcus | Mar 15 | | 2.5 | HubSpot implementation kickoff\nmeeting | James | Feb 19 | | 2.6 | Assign integration engineer for HubSpot project\n| Marcus | Feb 17 | | 2.7 | v3.2 reporting performance fix deployment | Elena | Feb\n20 |",
+      "source": "meeting_notes.pdf",
+      "page": 5,
+      "chunk": 2,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p9_c0",
+      "text": "4. Miscellaneous Updates\nLisbon office update (Elena): Buildout is on track. Furniture ordered, IT\ninfrastructure being installed week of March 10. First employees expected to\nstart on-site April 14 (two weeks behind original April 1 target due to permit\ndelays). Elena has been interviewing locally and has 3 offers out for senior\nbackend roles.\nHubSpot migration (James): Implementation started on schedule. Data\nmigration from Pipedrive is 60% complete. On track for April 15 go-live. One\nissue: historical pipeline data from before 2024 may not migrate cleanly. James\ndecided to archive pre-2024 data separately rather than delay the migration.\nQ1 revenue tracking (James): Tracking at 94% of plan as of March 1. Two large\nenterprise deals expected to close this month which would put us at 103% of Q1\ntarget. The v3.2 launch has definitely helped.",
+      "source": "meeting_notes.pdf",
+      "page": 9,
+      "chunk": 0,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p9_c1",
+      "text": "enterprise deals expected to close this month which would put us at 103% of Q1\ntarget. The v3.2 launch has definitely helped.\nHeadcount update (Aisha): 19 of 28 Q1 hires completed. 6 more in offer\nstage. 3 roles still in active sourcing (the 2 AI/ML specialists and 1 Lisbon office\nmanager). The AI roles have been challenging -- strong candidates are getting\n3-4 competing offers. Aisha suggested increasing the compensation band for\nthese roles by 10-15%. Sarah approved on the spot.\nAction Items: | # | Action | Owner | Deadline | |---|--------|-------|----------| | 3.1 |\nUpdate employee handbook with new remote work policy | Aisha | Mar 20 | | 3.2 |\nCompany-wide communication on remote policy change | Aisha + Sarah | Mar 20\n| | 3.3 | Update IT security policy (password rotation) | Marcus | Mar 12 | | 3.4 |\nCompany-wide communication on password policy change | Marcus | Mar 12 | |",
+      "source": "meeting_notes.pdf",
+      "page": 9,
+      "chunk": 1,
+      "score": null
+    },
+    {
+      "id": "meeting_notes_p9_c2",
+      "text": "Company-wide communication on password policy change | Marcus | Mar 12 | |\n3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 | | 3.6 |\nPost AI/ML specialist roles with updated comp bands | Aisha | Mar 7 | | 3.7 |\nLisbon office readiness report | Elena | Mar 28 | | 3.8 | Monthly Copilot progress\nreport (first) | Marcus | Apr 10 | | 3.9 | Pricing scenario analysis presentation to\nleadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective\ndates.",
+      "source": "meeting_notes.pdf",
+      "page": 9,
+      "chunk": 2,
+      "score": null
+    }
+  ],
+  "evaluation_question": "What action items and responsibilities were recorded in the meeting notes, and how do they relate to the company's business priorities?",
+  "question_id": 13,
+  "difficulty": "hard",
+  "retrieval_method": "section_keyword_with_neighbor_chunks",
+  "citations": [
+    {
+      "source": "meeting_notes.pdf",
+      "page": 2
+    },
+    {
+      "source": "meeting_notes.pdf",
+      "page": 9
+    },
+    {
+      "source": "meeting_notes.pdf",
+      "page": 5
+    },
+    {
+      "source": "meeting_notes.pdf",
+      "page": 3
+    }
+  ],
+  "passed": null,
+  "rating_note": ""
+}

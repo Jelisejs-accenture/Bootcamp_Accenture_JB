@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "question": "How often must vendors complete a security assessment?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "Before engagement and annually thereafter.",
+    "verified": false
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "question": "Which security questionnaire is required for vendors handling Public or Internal data?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "NovaTech Vendor Security Questionnaire VSQ-Lite, 30 questions.",
+    "verified": false
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "question": "What VPN client is installed on company devices?",
+    "source_hint": "company_handbook.pdf",
+    "expected_answer": "WireGuard.",
+    "verified": false
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "question": "When do employees complete annual data protection training?",
+    "source_hint": "company_handbook.pdf",
+    "expected_answer": "In February each year, through NovaLearn.",
+    "verified": false
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "question": "What is the purpose of the NovaTech Vendor Security Questionnaire?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "To assess third-party vendor security according to the classification of data they handle, before engagement and annually.",
+    "verified": false
+  },
+  {
+    "id": 6,
+    "difficulty": "medium",
+    "question": "How do vendor security requirements differ for Public, Confidential, and Restricted data?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "Public/Internal: VSQ-Lite (30 questions). Confidential: VSQ-Full (120 questions) and SOC 2 Type II audit evidence from the past 12 months. Restricted: all Confidential requirements plus an on-site or virtual security audit by the NovaTech Security Team.",
+    "verified": false
+  },
+  {
+    "id": 7,
+    "difficulty": "medium",
+    "question": "Under what conditions can vendors receive an exception to SOC 2 Type II certification?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "The CISO may grant a temporary exception for a maximum of six months if the vendor provides a documented remediation plan and agrees to enhanced monitoring.",
+    "verified": false
+  },
+  {
+    "id": 8,
+    "difficulty": "medium",
+    "question": "What security precautions must employees follow when connecting to company systems remotely?",
+    "source_hint": "company_handbook.pdf",
+    "expected_answer": "Employees must use the company VPN to access internal systems outside the office and must not connect company devices to untrusted public Wi-Fi without an active VPN.",
+    "verified": false
+  },
+  {
+    "id": 9,
+    "difficulty": "medium",
+    "question": "What were the main financial results reported for Q1 2026?",
+    "source_hint": "quarterly_report_q1_2026.pdf",
+    "expected_answer": "Q1 2026 quarterly revenue was EUR 4.8M versus a EUR 4.6M forecast. ARR reached EUR 18.2M, up 23% year over year. ARPA was EUR 21,488 and net revenue retention was 112%.",
+    "verified": false
+  },
+  {
+    "id": 10,
+    "difficulty": "medium",
+    "question": "What product features and support procedures are described in the product guide?",
+    "source_hint": "product_guide.pdf",
+    "expected_answer": "The product guide describes NovaTech ProjectHub and NovaTech Insight, including their features, pricing, technical specifications and integration capabilities. Onboarding includes self-service for all tiers, two-week Standard onboarding for Professional customers, and six-to-eight-week Premium onboarding for Enterprise. Training includes NovaTech Academy, weekly webinars and custom training. All tiers receive knowledge base, community forum and email support. Professional adds business-hours live chat. Enterprise includes 24/7 live chat and phone support, a dedicated support manager and quarterly business reviews. Professional services include data migration, custom integrations, dashboard design and process consulting.",
+    "verified": false
+  },
+  {
+    "id": 11,
+    "difficulty": "hard",
+    "question": "How do the company's employee data protection rules and third-party vendor security requirements work together to protect Restricted data?",
+    "source_hint": "company_handbook.pdf; security_policy.pdf",
+    "expected_answer": "Employees protect Restricted data through strict access controls, encryption at rest and in transit, audit logging, and annual data protection training. Vendors handling Restricted data must complete VSQ-Full, provide recent SOC 2 Type II audit evidence, and undergo an additional NovaTech security audit.",
+    "verified": false
+  },
+  {
+    "id": 12,
+    "difficulty": "hard",
+    "question": "What are the full compliance obligations of a vendor handling customer data, including assessments, certification, exceptions, and reporting changes?",
+    "source_hint": "security_policy.pdf",
+    "expected_answer": "Vendors must undergo security assessment before engagement and annually. Requirements depend on data classification. Vendors accessing customer data must have SOC 2 Type II certification, provide the latest report upon request, and report material changes within 30 days. The CISO may grant a maximum six-month exception with remediation and enhanced monitoring. Contracts accessing Confidential or Restricted data require a DPA.",
+    "verified": false
+  },
+  {
+    "id": 13,
+    "difficulty": "hard",
+    "question": "What action items and responsibilities were recorded in the meeting notes, and how do they relate to the company's business priorities?",
+    "source_hint": "meeting_notes.pdf",
+    "expected_answer": "The leadership meetings assigned action items supporting hiring, expansion, product reliability, CRM migration, security and AI development. Aisha Patel was responsible for recruiting timelines, Lisbon compensation bands, security training vendor selection and employee policy updates. Elena Rossi handled AI specialist job descriptions, launch readiness, the ProjectHub v3.2 reporting fix and Lisbon office readiness. Marcus Weber was responsible for secure coding training, technical integrations, password policy changes and the NovaTech Copilot project plan. James Park handled CRM vendor comparisons, HubSpot implementation, pricing scenarios and related business analysis. Sarah Chen shared responsibility for communicating remote work policy changes. These actions supported the company's priorities of scaling operations, improving products, strengthening security and growing revenue.",
+    "verified": false
+  },
+  {
+    "id": 14,
+    "difficulty": "unanswerable",
+    "question": "What will NovaTech's exact revenue be in Q1 2030?",
+    "source_hint": null,
+    "expected_answer": "The exact revenue for Q1 2030 is not provided and cannot be determined from the documents.",
+    "verified": false
+  },
+  {
+    "id": 15,
+    "difficulty": "unanswerable",
+    "question": "Who will be the CEO of NovaTech in the year 2035?",
+    "source_hint": null,
+    "expected_answer": "The identity of NovaTech's CEO in 2035 cannot be determined from the documents.",
+    "verified": false
+  }
+]

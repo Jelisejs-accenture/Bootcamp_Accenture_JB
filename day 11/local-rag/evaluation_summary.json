@@ -1,0 +1,35 @@
+{
+  "total_questions": 15,
+  "reviewed": 15,
+  "passed": 8,
+  "failed": 7,
+  "pass_rate_percent": 53.33,
+  "by_difficulty": {
+    "easy": {
+      "total": 5,
+      "passed": 4
+    },
+    "medium": {
+      "total": 5,
+      "passed": 1
+    },
+    "hard": {
+      "total": 3,
+      "passed": 1
+    },
+    "unanswerable": {
+      "total": 2,
+      "passed": 2
+    }
+  },
+  "finish_reasons": {
+    "stop": 14,
+    "length": 1
+  },
+  "questions_without_citations": [
+    10,
+    13,
+    14,
+    15
+  ]
+}
