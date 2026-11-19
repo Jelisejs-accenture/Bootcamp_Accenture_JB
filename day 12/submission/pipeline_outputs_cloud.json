@@ -1,0 +1,902 @@
+[
+  {
+    "question": "How often must vendors complete a security assessment?",
+    "answer": "Vendors must complete a security assessment before engagement and annually thereafter. [security_policy.pdf, p. 11]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 858,
+    "generated_tokens": 26,
+    "latency_seconds": 4.15,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.2348,
+        "score": 0.7652
+      },
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.2871,
+        "score": 0.7129
+      },
+      {
+        "id": "meeting_notes_p5_c0",
+        "text": "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency\nmanagement. He mentioned that the current IT security policy already requires\npassword rotation every 90 days and MFA on all systems, but training has been\nad hoc until now.\nDecision: Security training mandate approved. Aisha to select a vendor and\nhave the program ready to launch by April 1. Engineering-specific module to be",
+        "source": "meeting_notes.pdf",
+        "page": 5,
+        "chunk": 0,
+        "distance": 0.3519,
+        "score": 0.6481
+      },
+      {
+        "id": "security_policy_p7_c1",
+        "text": "acknowledgment within 24 hours. The Security Operations team investigates\nduring normal business hours and documents findings within 5 business days.\n4.3 Incident Response Procedures\nAll incidents, regardless of severity, follow the same six-phase response lifecycle:\nPhase 1 — Detection and Reporting. Any employee who suspects a security\nincident must report it immediately through one of three channels: the Security\nHotline (ext. 7700), the #security-incidents Slack channel, or email to security-\nalert@novatech.internal. Automated detection systems (SIEM, EDR, IDS) also\ngenerate alerts that are triaged by the Security Operations Center (SOC) during\nbusiness hours and by the on-call analyst outside business hours.\nPhase 2 — Triage and Classification. The receiving analyst performs initial\ntriage to determine legitimacy and assigns a severity level (P1 through P4). The",
+        "source": "security_policy.pdf",
+        "page": 7,
+        "chunk": 1,
+        "distance": 0.3546,
+        "score": 0.6454
+      }
+    ],
+    "id": "1",
+    "expected_answer": "Before engagement and annually thereafter.",
+    "actual_answer": "Vendors must complete a security assessment before engagement and annually thereafter. [security_policy.pdf, p. 11]",
+    "retrieved_context": [
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency\nmanagement. He mentioned that the current IT security policy already requires\npassword rotation every 90 days and MFA on all systems, but training has been\nad hoc until now.\nDecision: Security training mandate approved. Aisha to select a vendor and\nhave the program ready to launch by April 1. Engineering-specific module to be",
+      "acknowledgment within 24 hours. The Security Operations team investigates\nduring normal business hours and documents findings within 5 business days.\n4.3 Incident Response Procedures\nAll incidents, regardless of severity, follow the same six-phase response lifecycle:\nPhase 1 — Detection and Reporting. Any employee who suspects a security\nincident must report it immediately through one of three channels: the Security\nHotline (ext. 7700), the #security-incidents Slack channel, or email to security-\nalert@novatech.internal. Automated detection systems (SIEM, EDR, IDS) also\ngenerate alerts that are triaged by the Security Operations Center (SOC) during\nbusiness hours and by the on-call analyst outside business hours.\nPhase 2 — Triage and Classification. The receiving analyst performs initial\ntriage to determine legitimacy and assigns a severity level (P1 through P4). The"
+    ],
+    "generation_time_ms": 4150.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "Which security questionnaire is required for vendors handling Public or Internal data?",
+    "answer": "Vendors handling Public or Internal data must complete the **NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions)**. [security_policy.pdf, p. 11]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 767,
+    "generated_tokens": 40,
+    "latency_seconds": 1.62,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.2437,
+        "score": 0.7563
+      },
+      {
+        "id": "security_policy_p2_c2",
+        "text": "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 2,
+        "distance": 0.3189,
+        "score": 0.6811
+      },
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.3241,
+        "score": 0.6759
+      },
+      {
+        "id": "company_handbook_p16_c0",
+        "text": "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+        "source": "company_handbook.pdf",
+        "page": 16,
+        "chunk": 0,
+        "distance": 0.3461,
+        "score": 0.6539
+      }
+    ],
+    "id": "2",
+    "expected_answer": "NovaTech Vendor Security Questionnaire VSQ-Lite, 30 questions.",
+    "actual_answer": "Vendors handling Public or Internal data must complete the **NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions)**. [security_policy.pdf, p. 11]",
+    "retrieved_context": [
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are"
+    ],
+    "generation_time_ms": 1620.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What VPN client is installed on company devices?",
+    "answer": "WireGuard is the VPN client pre-installed on all company devices. [company_handbook.pdf, p. 15]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 822,
+    "generated_tokens": 27,
+    "latency_seconds": 1.2,
+    "retrieved_chunks": [
+      {
+        "id": "company_handbook_p15_c0",
+        "text": "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+        "source": "company_handbook.pdf",
+        "page": 15,
+        "chunk": 0,
+        "distance": 0.3146,
+        "score": 0.6854
+      },
+      {
+        "id": "company_handbook_p14_c1",
+        "text": "Device Management\nAll company-issued devices must be enrolled in the Mobile Device\nManagement (MDM) system (currently Microsoft Intune).\nPersonal devices may not be used to access production systems,\nsource code repositories, or customer data. Personal devices may be\nused to access email and Slack via the approved mobile applications,\nprovided the device meets the minimum security requirements (OS version\nno more than two major versions behind current, device encryption\nenabled, screen lock enabled).\nCompany-issued devices must have full-disk encryption enabled (BitLocker\nfor Windows, FileVault for macOS). This is configured automatically by IT.\nLost or stolen devices must be reported to IT within four (4) hours of\ndiscovery via the IT emergency hotline (+49 89 555 0199) or it-\nsecurity@novatech-solutions.com.\nSoftware and Development Practices",
+        "source": "company_handbook.pdf",
+        "page": 14,
+        "chunk": 1,
+        "distance": 0.3895,
+        "score": 0.6105
+      },
+      {
+        "id": "security_policy_p10_c1",
+        "text": "Installing unauthorized software, including peer-to-peer file sharing\napplications, cryptocurrency miners, or unapproved browser extensions.\nDisabling or circumventing security controls, including antivirus software,\nendpoint detection agents, firewalls, or DLP tools.\nSharing NovaTech credentials with any other person, including other\nNovaTech employees.\nUsing NovaTech systems to conduct business for any entity other than\nNovaTech without written authorization.\nConnecting personal devices to the NovaTech production network. Personal\ndevices may only access corporate resources through the approved Mobile\nDevice Management (MDM) platform.\nTransmitting Confidential or Restricted data through unapproved channels,\nincluding personal email accounts, unauthorized cloud storage services, or\nunencrypted messaging platforms.\n6.3 Monitoring",
+        "source": "security_policy.pdf",
+        "page": 10,
+        "chunk": 1,
+        "distance": 0.4068,
+        "score": 0.5932
+      },
+      {
+        "id": "company_handbook_p14_c2",
+        "text": "discovery via the IT emergency hotline (+49 89 555 0199) or it-\nsecurity@novatech-solutions.com.\nSoftware and Development Practices\nOnly software approved by IT may be installed on company devices.\nSoftware requests are submitted through the IT Service Portal and are\ntypically processed within three (3) business days.\nSource code must be stored exclusively in the company's GitHub Enterprise\ninstance. Personal GitHub accounts may not be used for company code.\nAll code changes to production branches require peer review by at least \none (1) other engineer before merging.\nSecrets (API keys, database credentials, certificates) must be stored in the\ncompany's secrets management system (HashiCorp Vault) and must never\nbe committed to version control.\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n•",
+        "source": "company_handbook.pdf",
+        "page": 14,
+        "chunk": 2,
+        "distance": 0.4089,
+        "score": 0.5911
+      }
+    ],
+    "id": "3",
+    "expected_answer": "WireGuard.",
+    "actual_answer": "WireGuard is the VPN client pre-installed on all company devices. [company_handbook.pdf, p. 15]",
+    "retrieved_context": [
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+      "Device Management\nAll company-issued devices must be enrolled in the Mobile Device\nManagement (MDM) system (currently Microsoft Intune).\nPersonal devices may not be used to access production systems,\nsource code repositories, or customer data. Personal devices may be\nused to access email and Slack via the approved mobile applications,\nprovided the device meets the minimum security requirements (OS version\nno more than two major versions behind current, device encryption\nenabled, screen lock enabled).\nCompany-issued devices must have full-disk encryption enabled (BitLocker\nfor Windows, FileVault for macOS). This is configured automatically by IT.\nLost or stolen devices must be reported to IT within four (4) hours of\ndiscovery via the IT emergency hotline (+49 89 555 0199) or it-\nsecurity@novatech-solutions.com.\nSoftware and Development Practices",
+      "Installing unauthorized software, including peer-to-peer file sharing\napplications, cryptocurrency miners, or unapproved browser extensions.\nDisabling or circumventing security controls, including antivirus software,\nendpoint detection agents, firewalls, or DLP tools.\nSharing NovaTech credentials with any other person, including other\nNovaTech employees.\nUsing NovaTech systems to conduct business for any entity other than\nNovaTech without written authorization.\nConnecting personal devices to the NovaTech production network. Personal\ndevices may only access corporate resources through the approved Mobile\nDevice Management (MDM) platform.\nTransmitting Confidential or Restricted data through unapproved channels,\nincluding personal email accounts, unauthorized cloud storage services, or\nunencrypted messaging platforms.\n6.3 Monitoring",
+      "discovery via the IT emergency hotline (+49 89 555 0199) or it-\nsecurity@novatech-solutions.com.\nSoftware and Development Practices\nOnly software approved by IT may be installed on company devices.\nSoftware requests are submitted through the IT Service Portal and are\ntypically processed within three (3) business days.\nSource code must be stored exclusively in the company's GitHub Enterprise\ninstance. Personal GitHub accounts may not be used for company code.\nAll code changes to production branches require peer review by at least \none (1) other engineer before merging.\nSecrets (API keys, database credentials, certificates) must be stored in the\ncompany's secrets management system (HashiCorp Vault) and must never\nbe committed to version control.\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n•"
+    ],
+    "generation_time_ms": 1200.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "When do employees complete annual data protection training?",
+    "answer": "Employees complete annual data protection training in February each year, administered via NovaLearn. [company_handbook.pdf, p. 16]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 810,
+    "generated_tokens": 30,
+    "latency_seconds": 1.48,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p14_c1",
+        "text": "training covers: data classification and handling, phishing recognition, password\nhygiene, incident reporting, and acceptable use. Employees with access to\nConfidential or Restricted data must additionally complete the Advanced Data\nHandling module. Completion rates are tracked by the People Operations team\nand reported to the CISO quarterly. Employees who fail to complete mandatory\ntraining within the required timeframe will have their system access suspended\nuntil training is completed.\n11. Enforcement and Compliance\nViolations of this policy may result in disciplinary action up to and including\ntermination of employment or contract. Serious violations may also result in civil\nor criminal liability. The Security Team conducts periodic compliance audits to\nverify adherence to this policy. Audit findings are reported to the CISO and, for",
+        "source": "security_policy.pdf",
+        "page": 14,
+        "chunk": 1,
+        "distance": 0.258,
+        "score": 0.742
+      },
+      {
+        "id": "company_handbook_p16_c0",
+        "text": "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+        "source": "company_handbook.pdf",
+        "page": 16,
+        "chunk": 0,
+        "distance": 0.3006,
+        "score": 0.6994
+      },
+      {
+        "id": "meeting_notes_p5_c0",
+        "text": "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency\nmanagement. He mentioned that the current IT security policy already requires\npassword rotation every 90 days and MFA on all systems, but training has been\nad hoc until now.\nDecision: Security training mandate approved. Aisha to select a vendor and\nhave the program ready to launch by April 1. Engineering-specific module to be",
+        "source": "meeting_notes.pdf",
+        "page": 5,
+        "chunk": 0,
+        "distance": 0.3205,
+        "score": 0.6795
+      },
+      {
+        "id": "security_policy_p14_c0",
+        "text": "and mitigate its effects. If direct notification is disproportionately difficult (e.g.,\ncontact details are unavailable), NovaTech will issue a public communication\nthrough its website and, where appropriate, social media channels.\n9.4 Breach Register\nAll personal data breaches — regardless of whether they trigger notification\nobligations — are documented in the Breach Register maintained by the DPO.\nEach entry includes: the facts of the breach, its effects, and the remedial actions\ntaken. The Breach Register is reviewed by the CISO and DPO monthly and is\navailable for inspection by supervisory authorities upon request.\n10. Training and Awareness\nAll NovaTech employees must complete the Information Security Awareness\ntraining within 30 days of joining the Company and annually thereafter. The\ntraining covers: data classification and handling, phishing recognition, password",
+        "source": "security_policy.pdf",
+        "page": 14,
+        "chunk": 0,
+        "distance": 0.3274,
+        "score": 0.6726
+      }
+    ],
+    "id": "4",
+    "expected_answer": "In February each year, through NovaLearn.",
+    "actual_answer": "Employees complete annual data protection training in February each year, administered via NovaLearn. [company_handbook.pdf, p. 16]",
+    "retrieved_context": [
+      "training covers: data classification and handling, phishing recognition, password\nhygiene, incident reporting, and acceptable use. Employees with access to\nConfidential or Restricted data must additionally complete the Advanced Data\nHandling module. Completion rates are tracked by the People Operations team\nand reported to the CISO quarterly. Employees who fail to complete mandatory\ntraining within the required timeframe will have their system access suspended\nuntil training is completed.\n11. Enforcement and Compliance\nViolations of this policy may result in disciplinary action up to and including\ntermination of employment or contract. Serious violations may also result in civil\nor criminal liability. The Security Team conducts periodic compliance audits to\nverify adherence to this policy. Audit findings are reported to the CISO and, for",
+      "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency\nmanagement. He mentioned that the current IT security policy already requires\npassword rotation every 90 days and MFA on all systems, but training has been\nad hoc until now.\nDecision: Security training mandate approved. Aisha to select a vendor and\nhave the program ready to launch by April 1. Engineering-specific module to be",
+      "and mitigate its effects. If direct notification is disproportionately difficult (e.g.,\ncontact details are unavailable), NovaTech will issue a public communication\nthrough its website and, where appropriate, social media channels.\n9.4 Breach Register\nAll personal data breaches — regardless of whether they trigger notification\nobligations — are documented in the Breach Register maintained by the DPO.\nEach entry includes: the facts of the breach, its effects, and the remedial actions\ntaken. The Breach Register is reviewed by the CISO and DPO monthly and is\navailable for inspection by supervisory authorities upon request.\n10. Training and Awareness\nAll NovaTech employees must complete the Information Security Awareness\ntraining within 30 days of joining the Company and annually thereafter. The\ntraining covers: data classification and handling, phishing recognition, password"
+    ],
+    "generation_time_ms": 1480.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What is the purpose of the NovaTech Vendor Security Questionnaire?",
+    "answer": "I could not find this information in the provided documents.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 836,
+    "generated_tokens": 14,
+    "latency_seconds": 1.35,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.2136,
+        "score": 0.7864
+      },
+      {
+        "id": "security_policy_p1_c0",
+        "text": "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership Team\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaTech\nSolutions (\"NovaTech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaTech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaTech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit",
+        "source": "security_policy.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.2707,
+        "score": 0.7293
+      },
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.2993,
+        "score": 0.7007
+      },
+      {
+        "id": "product_guide_p1_c1",
+        "text": "Data Management and Export\nSecurity and Compliance\nDeployment Options\nSupport and Onboarding\nFrequently Asked Questions\n1. Company Overview\nNovaTech Solutions was founded by Dr. Lena Vogt and Marco Bassi with a\nsingular mission: to bridge the gap between project execution and business\nintelligence. Too many organizations run projects in one tool and analyze\noutcomes in another, losing context and time in the process. NovaTech's\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14.",
+        "source": "product_guide.pdf",
+        "page": 1,
+        "chunk": 1,
+        "distance": 0.3126,
+        "score": 0.6874
+      }
+    ],
+    "id": "5",
+    "expected_answer": "To assess third-party vendor security according to the classification of data they handle, before engagement and annually.",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "retrieved_context": [
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership Team\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaTech\nSolutions (\"NovaTech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaTech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaTech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit",
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "Data Management and Export\nSecurity and Compliance\nDeployment Options\nSupport and Onboarding\nFrequently Asked Questions\n1. Company Overview\nNovaTech Solutions was founded by Dr. Lena Vogt and Marco Bassi with a\nsingular mission: to bridge the gap between project execution and business\nintelligence. Too many organizations run projects in one tool and analyze\noutcomes in another, losing context and time in the process. NovaTech's\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14."
+    ],
+    "generation_time_ms": 1350.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "How do vendor security requirements differ for Public, Confidential, and Restricted data?",
+    "answer": "- **Public data:** Vendors must complete the **VSQ-Lite (30 questions)** before engagement and annually thereafter. [security_policy.pdf, p. 11]\n- **Confidential data:** Vendors must complete the **VSQ-Full (120 questions)** and provide evidence of a **SOC 2 Type II audit completed within the past 12 months**. [security_policy.pdf, p. 11]\n- **Restricted data:** Vendors must meet all **Confidential-tier requirements** and additionally undergo an **on-site or virtual security audit by the NovaTech Security Team**. [security_policy.pdf, p. 11]\n\nAdditionally, SOC 2 Type II certification is mandatory for vendors processing, storing, or accessing customer data, subject to a possible CISO-approved temporary exception of up to six months. [security_policy.pdf, p. 11]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 760,
+    "generated_tokens": 177,
+    "latency_seconds": 2.14,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.2272,
+        "score": 0.7728
+      },
+      {
+        "id": "security_policy_p2_c2",
+        "text": "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 2,
+        "distance": 0.2445,
+        "score": 0.7555
+      },
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.2822,
+        "score": 0.7178
+      },
+      {
+        "id": "security_policy_p2_c1",
+        "text": "project documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaTech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health\nrecords, data subject to specific regulatory requirements (such as GDPR special",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 1,
+        "distance": 0.2886,
+        "score": 0.7114
+      }
+    ],
+    "id": "6",
+    "expected_answer": "Public/Internal: VSQ-Lite (30 questions). Confidential: VSQ-Full (120 questions) and SOC 2 Type II audit evidence from the past 12 months. Restricted: all Confidential requirements plus an on-site or virtual security audit by the NovaTech Security Team.",
+    "actual_answer": "- **Public data:** Vendors must complete the **VSQ-Lite (30 questions)** before engagement and annually thereafter. [security_policy.pdf, p. 11]\n- **Confidential data:** Vendors must complete the **VSQ-Full (120 questions)** and provide evidence of a **SOC 2 Type II audit completed within the past 12 months**. [security_policy.pdf, p. 11]\n- **Restricted data:** Vendors must meet all **Confidential-tier requirements** and additionally undergo an **on-site or virtual security audit by the NovaTech Security Team**. [security_policy.pdf, p. 11]\n\nAdditionally, SOC 2 Type II certification is mandatory for vendors processing, storing, or accessing customer data, subject to a possible CISO-approved temporary exception of up to six months. [security_policy.pdf, p. 11]",
+    "retrieved_context": [
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "project documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaTech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health\nrecords, data subject to specific regulatory requirements (such as GDPR special"
+    ],
+    "generation_time_ms": 2140.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "Under what conditions can vendors receive an exception to SOC 2 Type II certification?",
+    "answer": "Vendors without SOC 2 Type II certification may receive a temporary exception only if:\n\n- The CISO grants the exception.\n- The exception lasts no more than six months.\n- The vendor provides a documented remediation plan.\n- The vendor agrees to enhanced monitoring during the exception period.\n\n[security_policy.pdf, p. 11]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 779,
+    "generated_tokens": 69,
+    "latency_seconds": 1.78,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.2385,
+        "score": 0.7615
+      },
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.3565,
+        "score": 0.6435
+      },
+      {
+        "id": "security_policy_p6_c2",
+        "text": "vulnerability being actively exploited in a non-production system, compromise of\na single employee account with access to customer data, or detection of\nmalware on internal systems that has not spread to production. P2 incidents\nrequire acknowledgment within 1 hour of detection. The Incident Commander\nand Security Operations Lead must be engaged within 1 hour. A preliminary\nimpact assessment must be completed within 4 hours, which includes identifying\nall potentially affected systems, determining whether any customer data may\nhave been accessed, and evaluating the attack vector. The Engineering Lead\njoins the response within 2 hours to begin technical containment. A status update\nmust be provided to the CISO every 2 hours until the incident is downgraded or\nresolved. If the preliminary assessment indicates that customer data was\naccessed, the incident is automatically escalated to P1.",
+        "source": "security_policy.pdf",
+        "page": 6,
+        "chunk": 2,
+        "distance": 0.3885,
+        "score": 0.6115
+      },
+      {
+        "id": "security_policy_p2_c2",
+        "text": "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 2,
+        "distance": 0.4039,
+        "score": 0.5961
+      }
+    ],
+    "id": "7",
+    "expected_answer": "The CISO may grant a temporary exception for a maximum of six months if the vendor provides a documented remediation plan and agrees to enhanced monitoring.",
+    "actual_answer": "Vendors without SOC 2 Type II certification may receive a temporary exception only if:\n\n- The CISO grants the exception.\n- The exception lasts no more than six months.\n- The vendor provides a documented remediation plan.\n- The vendor agrees to enhanced monitoring during the exception period.\n\n[security_policy.pdf, p. 11]",
+    "retrieved_context": [
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "vulnerability being actively exploited in a non-production system, compromise of\na single employee account with access to customer data, or detection of\nmalware on internal systems that has not spread to production. P2 incidents\nrequire acknowledgment within 1 hour of detection. The Incident Commander\nand Security Operations Lead must be engaged within 1 hour. A preliminary\nimpact assessment must be completed within 4 hours, which includes identifying\nall potentially affected systems, determining whether any customer data may\nhave been accessed, and evaluating the attack vector. The Engineering Lead\njoins the response within 2 hours to begin technical containment. A status update\nmust be provided to the CISO every 2 hours until the incident is downgraded or\nresolved. If the preliminary assessment indicates that customer data was\naccessed, the incident is automatically escalated to P1.",
+      "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended"
+    ],
+    "generation_time_ms": 1780.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What security precautions must employees follow when connecting to company systems remotely?",
+    "answer": "Employees connecting remotely must:\n\n- Use the company VPN (WireGuard) when accessing internal systems from outside the office network.\n- Never connect company devices to untrusted public Wi‑Fi without the VPN active.\n- Comply with all IT security policies when working remotely. [company_handbook.pdf, p. 15; company_handbook.pdf, p. 4]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 821,
+    "generated_tokens": 77,
+    "latency_seconds": 1.41,
+    "retrieved_chunks": [
+      {
+        "id": "company_handbook_p15_c0",
+        "text": "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+        "source": "company_handbook.pdf",
+        "page": 15,
+        "chunk": 0,
+        "distance": 0.3052,
+        "score": 0.6948
+      },
+      {
+        "id": "company_handbook_p16_c0",
+        "text": "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+        "source": "company_handbook.pdf",
+        "page": 16,
+        "chunk": 0,
+        "distance": 0.3088,
+        "score": 0.6912
+      },
+      {
+        "id": "company_handbook_p4_c1",
+        "text": "team coverage needs, collaboration requirements, and role suitability.\nApproved arrangements are documented in NovaHR and reviewed\nquarterly.\nRequirements for Remote Work\nEmployees must have a stable internet connection (minimum 25 Mbps\ndownload, 5 Mbps upload).\nA dedicated, ergonomic workspace is recommended. NovaTech offers a one-\ntime home office setup allowance of €500 for employees approved for\nregular remote work (see Section 6).\nEmployees must be reachable via Slack and email during core collaboration\nhours.\nAll remote work must comply with IT security policies (see Section 11),\nincluding the use of the company VPN for accessing internal systems.\nLocation Restrictions\nRemote work must be performed from the employee's registered country of\nemployment. Working from a different country for more than five (5)\nconsecutive business days requires prior approval from HR due to tax and",
+        "source": "company_handbook.pdf",
+        "page": 4,
+        "chunk": 1,
+        "distance": 0.309,
+        "score": 0.691
+      },
+      {
+        "id": "company_handbook_p13_c1",
+        "text": "advise on any necessary mitigations.\nUse of Company Resources\nCompany resources — including equipment, software licenses, email, and\ninternet access — are provided for business purposes. Limited personal use is\npermitted provided it does not interfere with job performance, violate any\ncompany policy, or create legal liability for NovaTech. Employees should have no\nexpectation of privacy when using company-owned devices and systems.\nSocial Media\nEmployees are welcome to discuss their work at NovaTech on social media,\nprovided they do not disclose confidential information (see Section 12), clearly\nstate that opinions are their own, and comply with the Social Media Guidelines\npublished on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors",
+        "source": "company_handbook.pdf",
+        "page": 13,
+        "chunk": 1,
+        "distance": 0.3183,
+        "score": 0.6817
+      }
+    ],
+    "id": "8",
+    "expected_answer": "Employees must use the company VPN to access internal systems outside the office and must not connect company devices to untrusted public Wi-Fi without an active VPN.",
+    "actual_answer": "Employees connecting remotely must:\n\n- Use the company VPN (WireGuard) when accessing internal systems from outside the office network.\n- Never connect company devices to untrusted public Wi‑Fi without the VPN active.\n- Comply with all IT security policies when working remotely. [company_handbook.pdf, p. 15; company_handbook.pdf, p. 4]",
+    "retrieved_context": [
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+      "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+      "team coverage needs, collaboration requirements, and role suitability.\nApproved arrangements are documented in NovaHR and reviewed\nquarterly.\nRequirements for Remote Work\nEmployees must have a stable internet connection (minimum 25 Mbps\ndownload, 5 Mbps upload).\nA dedicated, ergonomic workspace is recommended. NovaTech offers a one-\ntime home office setup allowance of €500 for employees approved for\nregular remote work (see Section 6).\nEmployees must be reachable via Slack and email during core collaboration\nhours.\nAll remote work must comply with IT security policies (see Section 11),\nincluding the use of the company VPN for accessing internal systems.\nLocation Restrictions\nRemote work must be performed from the employee's registered country of\nemployment. Working from a different country for more than five (5)\nconsecutive business days requires prior approval from HR due to tax and",
+      "advise on any necessary mitigations.\nUse of Company Resources\nCompany resources — including equipment, software licenses, email, and\ninternet access — are provided for business purposes. Limited personal use is\npermitted provided it does not interfere with job performance, violate any\ncompany policy, or create legal liability for NovaTech. Employees should have no\nexpectation of privacy when using company-owned devices and systems.\nSocial Media\nEmployees are welcome to discuss their work at NovaTech on social media,\nprovided they do not disclose confidential information (see Section 12), clearly\nstate that opinions are their own, and comply with the Social Media Guidelines\npublished on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors"
+    ],
+    "generation_time_ms": 1410.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What were the main financial results reported for Q1 2026?",
+    "answer": "The main financial results for Q1 2026 were:\n\n- **Quarterly revenue:** EUR 4.8 million, up **29.7% year over year** and 6.7% quarter over quarter.\n- **Annual Recurring Revenue (ARR):** EUR 18.2 million, up **23% year over year**.\n- **Average Revenue Per Account:** EUR 21,488, up **14.6% year over year**.\n- **Net Revenue Retention:** 112%, compared with 105% in Q1 2025.\n- **Operating income:** EUR 280,000, with an **operating margin of 5.8%**.\n- **Revenue mix:** Subscription revenue contributed EUR 4.37 million, or 91% of total revenue; professional services contributed EUR 0.43 million, or 9%.\n- **Product revenue:** ProjectHub generated EUR 3.36 million, Insight EUR 1.20 million, and Professional Services EUR 0.24 million. [quarterly_report_q1_2026.pdf, pp. 1–2, 13]",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 1001,
+    "generated_tokens": 236,
+    "latency_seconds": 2.1,
+    "retrieved_chunks": [
+      {
+        "id": "quarterly_report_q1_2026_p1_c0",
+        "text": "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.2772,
+        "score": 0.7228
+      },
+      {
+        "id": "quarterly_report_q1_2026_p14_c0",
+        "text": "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 14,
+        "chunk": 0,
+        "distance": 0.2847,
+        "score": 0.7153
+      },
+      {
+        "id": "quarterly_report_q1_2026_p2_c0",
+        "text": "2. Financial Performance\n2.1 Revenue Overview\nMetric\nQ1\n2026\nQ4\n2025\nQ1\n2025\nQoQ\nChange\nYoY\nChange\nQuarterly Revenue\nEUR\n4.8M\nEUR\n4.5M\nEUR\n3.7M\n+6.7% +29.7%\nAnnual Recurring\nRevenue (ARR)\nEUR\n18.2M\nEUR\n17.1M\nEUR\n14.8M\n+6.4% +23.0%\nAverage Revenue Per\nAccount (ARPA)\nEUR\n21,488\nEUR\n20,612\nEUR\n18,750\n+4.2% +14.6%\nNet Revenue\nRetention (NRR)\n112% 108% 105% +4pp +7pp\nSubscription revenue accounted for 91% of total quarterly revenue (EUR 4.37M),\nwith the remaining 9% (EUR 0.43M) derived from professional services\nengagements, primarily onboarding and custom integration work for Enterprise-\ntier customers.\n2.2 Revenue by Product Line\nProduct Q1 2026 Revenue Share of Total YoY Growth\nProjectHub EUR 3.36M 70% +26%\nInsight EUR 1.20M 25% +31%\nProfessional Services EUR 0.24M 5% +12%\nProjectHub remains our primary revenue driver, though Insight continues to grow",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 2,
+        "chunk": 0,
+        "distance": 0.3191,
+        "score": 0.6809
+      },
+      {
+        "id": "quarterly_report_q1_2026_p13_c0",
+        "text": "Line Item Q1 2026 (EUR)\nResearch & Development (1,680,000)\nSales & Marketing (1,152,000)\nGeneral & Administrative (632,000)\nTotal Operating Expenses (3,464,000)\nOperating Income 280,000\nOperating Margin 5.8%\nAppendix B: Key Performance Indicators\nDashboard\nKPI Q1 2026 Target Status\nARR EUR 18.2M EUR 17.5M Above target\nARR Growth (YoY) 23% 20% Above target\nNet Revenue Retention 112% 110% Above target\nGross Churn (Quarterly) 3.2% 2.5% Below target\nNew ACV EUR 1.9M EUR 1.7M Above target\nCustomer Count 847 830 Above target\nNPS (ProjectHub) 51 50 On target\nNPS (Insight) 46 48 Below target\nEmployee Headcount 412 409 On target\nEmployee Engagement 78/100 80/100 Below target\nPlatform Uptime 99.97% 99.9% Above target\nCAC Payback (months) 14 15 Above target\nLTV/CAC Ratio 4.8x 4.5x Above target\nThis report is confidential and intended for internal distribution to the NovaTech",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 13,
+        "chunk": 0,
+        "distance": 0.3672,
+        "score": 0.6328
+      }
+    ],
+    "id": "9",
+    "expected_answer": "Q1 2026 quarterly revenue was EUR 4.8M versus a EUR 4.6M forecast. ARR reached EUR 18.2M, up 23% year over year. ARPA was EUR 21,488 and net revenue retention was 112%.",
+    "actual_answer": "The main financial results for Q1 2026 were:\n\n- **Quarterly revenue:** EUR 4.8 million, up **29.7% year over year** and 6.7% quarter over quarter.\n- **Annual Recurring Revenue (ARR):** EUR 18.2 million, up **23% year over year**.\n- **Average Revenue Per Account:** EUR 21,488, up **14.6% year over year**.\n- **Net Revenue Retention:** 112%, compared with 105% in Q1 2025.\n- **Operating income:** EUR 280,000, with an **operating margin of 5.8%**.\n- **Revenue mix:** Subscription revenue contributed EUR 4.37 million, or 91% of total revenue; professional services contributed EUR 0.43 million, or 9%.\n- **Product revenue:** ProjectHub generated EUR 3.36 million, Insight EUR 1.20 million, and Professional Services EUR 0.24 million. [quarterly_report_q1_2026.pdf, pp. 1–2, 13]",
+    "retrieved_context": [
+      "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "2. Financial Performance\n2.1 Revenue Overview\nMetric\nQ1\n2026\nQ4\n2025\nQ1\n2025\nQoQ\nChange\nYoY\nChange\nQuarterly Revenue\nEUR\n4.8M\nEUR\n4.5M\nEUR\n3.7M\n+6.7% +29.7%\nAnnual Recurring\nRevenue (ARR)\nEUR\n18.2M\nEUR\n17.1M\nEUR\n14.8M\n+6.4% +23.0%\nAverage Revenue Per\nAccount (ARPA)\nEUR\n21,488\nEUR\n20,612\nEUR\n18,750\n+4.2% +14.6%\nNet Revenue\nRetention (NRR)\n112% 108% 105% +4pp +7pp\nSubscription revenue accounted for 91% of total quarterly revenue (EUR 4.37M),\nwith the remaining 9% (EUR 0.43M) derived from professional services\nengagements, primarily onboarding and custom integration work for Enterprise-\ntier customers.\n2.2 Revenue by Product Line\nProduct Q1 2026 Revenue Share of Total YoY Growth\nProjectHub EUR 3.36M 70% +26%\nInsight EUR 1.20M 25% +31%\nProfessional Services EUR 0.24M 5% +12%\nProjectHub remains our primary revenue driver, though Insight continues to grow",
+      "Line Item Q1 2026 (EUR)\nResearch & Development (1,680,000)\nSales & Marketing (1,152,000)\nGeneral & Administrative (632,000)\nTotal Operating Expenses (3,464,000)\nOperating Income 280,000\nOperating Margin 5.8%\nAppendix B: Key Performance Indicators\nDashboard\nKPI Q1 2026 Target Status\nARR EUR 18.2M EUR 17.5M Above target\nARR Growth (YoY) 23% 20% Above target\nNet Revenue Retention 112% 110% Above target\nGross Churn (Quarterly) 3.2% 2.5% Below target\nNew ACV EUR 1.9M EUR 1.7M Above target\nCustomer Count 847 830 Above target\nNPS (ProjectHub) 51 50 On target\nNPS (Insight) 46 48 Below target\nEmployee Headcount 412 409 On target\nEmployee Engagement 78/100 80/100 Below target\nPlatform Uptime 99.97% 99.9% Above target\nCAC Payback (months) 14 15 Above target\nLTV/CAC Ratio 4.8x 4.5x Above target\nThis report is confidential and intended for internal distribution to the NovaTech"
+    ],
+    "generation_time_ms": 2100.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What product features and support procedures are described in the product guide?",
+    "answer": "The product guide describes features and support-related offerings for NovaTech’s two core platforms, **ProjectHub** and **Insight**, including:\n\n- Project management capabilities, such as AI task prioritization, dependency mapping, enhanced Gantt views, and expanded webhook integrations. [quarterly_report_q1_2026.pdf, p. 5]\n- Document management with support for PDF, DOCX, XLSX, PPTX, PNG, JPG, SVG, MP4, and more; version history; in-browser preview and annotation; and full-text search for Professional and Enterprise tiers. [product_guide.pdf, p. 5]\n- Reporting features, including 18 pre-built report templates, custom drag-and-drop reports, filtering, grouping, conditional formatting, and scheduled email delivery on Professional and Enterprise tiers. [product_guide.pdf, p. 5]\n- Support and onboarding information is listed as a section of the guide’s table of contents, along with service-level agreements, pricing, integrations, APIs, data export, security, and deployment options. [product_guide.pdf, p. 1]\n\nThe provided excerpts do not describe the specific support procedures or onboarding steps.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 834,
+    "generated_tokens": 240,
+    "latency_seconds": 3.07,
+    "retrieved_chunks": [
+      {
+        "id": "product_guide_p1_c0",
+        "text": "NovaTech Solutions — Product\nGuide\nVersion 4.2 | Last Updated: January 2026\nNovaTech Solutions is a B2B SaaS company headquartered in Munich, Germany,\nwith offices in Lisbon and Austin. Founded in 2017, NovaTech serves over 800\ncustomers across 24 countries. This product guide provides a comprehensive\noverview of our two core platforms — NovaTech ProjectHub and NovaTech\nInsight — including features, pricing, technical specifications, and integration\ncapabilities.\nTable of Contents\nCompany Overview\nNovaTech ProjectHub\nNovaTech Insight\nShared Analytics Dashboard\nPricing and Plans\nFeature Comparison by Tier\nService Level Agreements\nAPI Reference and Rate Limits\nIntegration Capabilities\nData Management and Export\nSecurity and Compliance\nDeployment Options\nSupport and Onboarding\nFrequently Asked Questions\n1. Company Overview",
+        "source": "product_guide.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.3464,
+        "score": 0.6536
+      },
+      {
+        "id": "security_policy_p2_c0",
+        "text": "2. Data Classification\n2.1 Classification Levels\nAll information assets created, received, or maintained by NovaTech must be\nclassified into one of four levels. Data owners are responsible for assigning the\nappropriate classification at the time of creation. Classification must be reviewed\nwhenever the nature or sensitivity of the data changes.\nPublic: Information explicitly approved for external distribution. This includes\nmarketing materials, published blog posts, press releases, and publicly available\nproduct documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaTech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 0,
+        "distance": 0.4103,
+        "score": 0.5897
+      },
+      {
+        "id": "quarterly_report_q1_2026_p5_c1",
+        "text": "significant product update in over a year. Key features included:\nAI Task Prioritization Engine: Uses machine learning models to analyze\nhistorical project data and recommend task prioritization. Available to\nProfessional and Enterprise tiers. Early adoption has been strong, with 34%\nof eligible accounts activating the feature within the first six weeks.\nSmart Dependency Mapping: Automatically detects and visualizes task\ndependencies based on project descriptions and historical patterns.\nReduces manual setup time for complex projects by an estimated 40%.\nEnhanced Gantt View: Rebuilt Gantt chart component with improved\nperformance (3x faster rendering for projects with 500+ tasks) and new\ndrag-and-drop rescheduling capabilities.\nWebhook API v2: Expanded integration framework supporting bi-\ndirectional sync with 14 additional third-party tools, including Jira,\nSalesforce, and SAP.",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 5,
+        "chunk": 1,
+        "distance": 0.42,
+        "score": 0.58
+      },
+      {
+        "id": "product_guide_p5_c0",
+        "text": "Supported formats: PDF, DOCX, XLSX, PPTX, PNG, JPG, SVG, MP4, and 40+\nadditional formats\nVersion history: last 10 versions (Starter), last 50 versions (Professional),\nunlimited (Enterprise)\nIn-browser preview and annotation for PDF and image files\nFull-text search across document contents (Professional and Enterprise\nonly)\n2.3 ProjectHub Reporting\nProjectHub includes a native reporting module with 18 pre-built report templates:\nProject status summary\nTask completion rate\nSprint velocity trend\nResource utilization\nTime tracking summary\nRisk register\nDependency health\nOverdue tasks\nCustom reports can be created using a drag-and-drop report builder. Reports\nsupport filtering by any standard or custom field, grouping, and conditional\nformatting. Scheduled report delivery via email is available on Professional and\nEnterprise tiers (daily, weekly, or monthly).",
+        "source": "product_guide.pdf",
+        "page": 5,
+        "chunk": 0,
+        "distance": 0.4253,
+        "score": 0.5747
+      }
+    ],
+    "id": "10",
+    "expected_answer": "The product guide describes NovaTech ProjectHub and NovaTech Insight, including their features, pricing, technical specifications and integration capabilities. Onboarding includes self-service for all tiers, two-week Standard onboarding for Professional customers, and six-to-eight-week Premium onboarding for Enterprise. Training includes NovaTech Academy, weekly webinars and custom training. All tiers receive knowledge base, community forum and email support. Professional adds business-hours live chat. Enterprise includes 24/7 live chat and phone support, a dedicated support manager and quarterly business reviews. Professional services include data migration, custom integrations, dashboard design and process consulting.",
+    "actual_answer": "The product guide describes features and support-related offerings for NovaTech’s two core platforms, **ProjectHub** and **Insight**, including:\n\n- Project management capabilities, such as AI task prioritization, dependency mapping, enhanced Gantt views, and expanded webhook integrations. [quarterly_report_q1_2026.pdf, p. 5]\n- Document management with support for PDF, DOCX, XLSX, PPTX, PNG, JPG, SVG, MP4, and more; version history; in-browser preview and annotation; and full-text search for Professional and Enterprise tiers. [product_guide.pdf, p. 5]\n- Reporting features, including 18 pre-built report templates, custom drag-and-drop reports, filtering, grouping, conditional formatting, and scheduled email delivery on Professional and Enterprise tiers. [product_guide.pdf, p. 5]\n- Support and onboarding information is listed as a section of the guide’s table of contents, along with service-level agreements, pricing, integrations, APIs, data export, security, and deployment options. [product_guide.pdf, p. 1]\n\nThe provided excerpts do not describe the specific support procedures or onboarding steps.",
+    "retrieved_context": [
+      "NovaTech Solutions — Product\nGuide\nVersion 4.2 | Last Updated: January 2026\nNovaTech Solutions is a B2B SaaS company headquartered in Munich, Germany,\nwith offices in Lisbon and Austin. Founded in 2017, NovaTech serves over 800\ncustomers across 24 countries. This product guide provides a comprehensive\noverview of our two core platforms — NovaTech ProjectHub and NovaTech\nInsight — including features, pricing, technical specifications, and integration\ncapabilities.\nTable of Contents\nCompany Overview\nNovaTech ProjectHub\nNovaTech Insight\nShared Analytics Dashboard\nPricing and Plans\nFeature Comparison by Tier\nService Level Agreements\nAPI Reference and Rate Limits\nIntegration Capabilities\nData Management and Export\nSecurity and Compliance\nDeployment Options\nSupport and Onboarding\nFrequently Asked Questions\n1. Company Overview",
+      "2. Data Classification\n2.1 Classification Levels\nAll information assets created, received, or maintained by NovaTech must be\nclassified into one of four levels. Data owners are responsible for assigning the\nappropriate classification at the time of creation. Classification must be reviewed\nwhenever the nature or sensitivity of the data changes.\nPublic: Information explicitly approved for external distribution. This includes\nmarketing materials, published blog posts, press releases, and publicly available\nproduct documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaTech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and",
+      "significant product update in over a year. Key features included:\nAI Task Prioritization Engine: Uses machine learning models to analyze\nhistorical project data and recommend task prioritization. Available to\nProfessional and Enterprise tiers. Early adoption has been strong, with 34%\nof eligible accounts activating the feature within the first six weeks.\nSmart Dependency Mapping: Automatically detects and visualizes task\ndependencies based on project descriptions and historical patterns.\nReduces manual setup time for complex projects by an estimated 40%.\nEnhanced Gantt View: Rebuilt Gantt chart component with improved\nperformance (3x faster rendering for projects with 500+ tasks) and new\ndrag-and-drop rescheduling capabilities.\nWebhook API v2: Expanded integration framework supporting bi-\ndirectional sync with 14 additional third-party tools, including Jira,\nSalesforce, and SAP.",
+      "Supported formats: PDF, DOCX, XLSX, PPTX, PNG, JPG, SVG, MP4, and 40+\nadditional formats\nVersion history: last 10 versions (Starter), last 50 versions (Professional),\nunlimited (Enterprise)\nIn-browser preview and annotation for PDF and image files\nFull-text search across document contents (Professional and Enterprise\nonly)\n2.3 ProjectHub Reporting\nProjectHub includes a native reporting module with 18 pre-built report templates:\nProject status summary\nTask completion rate\nSprint velocity trend\nResource utilization\nTime tracking summary\nRisk register\nDependency health\nOverdue tasks\nCustom reports can be created using a drag-and-drop report builder. Reports\nsupport filtering by any standard or custom field, grouping, and conditional\nformatting. Scheduled report delivery via email is available on Professional and\nEnterprise tiers (daily, weekly, or monthly)."
+    ],
+    "generation_time_ms": 3070.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "How do the company's employee data protection rules and third-party vendor security requirements work together to protect Restricted data?",
+    "answer": "Employee data protection rules and third-party vendor security requirements work together by limiting access to Restricted data and requiring strong safeguards:\n\n- Restricted data, including customer PII, credentials, security audits, regulatory data, penetration-test results, and incident-response evidence, may be accessed only by specifically named individuals approved by the data owner and CISO. [security_policy.pdf, p. 2]\n- It must be protected with strict access controls, encryption at rest and in transit, and audit logging. [company_handbook.pdf, p. 16]\n- Employees must complete annual data-protection training to retain access to Confidential and Restricted data. [company_handbook.pdf, p. 16]\n- Employees must use the company VPN when accessing internal systems outside the office network and must not use untrusted public Wi‑Fi without the VPN active. [company_handbook.pdf, p. 15]\n- Confidentiality obligations prohibit disclosure to unauthorized persons and continue for 24 months after employment ends, unless a longer contractual period applies. [company_handbook.pdf, p. 15]\n\nThe provided excerpts do not specify the separate security requirements imposed on third-party vendors or explain how vendor access is governed.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 772,
+    "generated_tokens": 241,
+    "latency_seconds": 2.56,
+    "retrieved_chunks": [
+      {
+        "id": "company_handbook_p16_c0",
+        "text": "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+        "source": "company_handbook.pdf",
+        "page": 16,
+        "chunk": 0,
+        "distance": 0.2442,
+        "score": 0.7558
+      },
+      {
+        "id": "company_handbook_p15_c0",
+        "text": "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+        "source": "company_handbook.pdf",
+        "page": 15,
+        "chunk": 0,
+        "distance": 0.2702,
+        "score": 0.7298
+      },
+      {
+        "id": "security_policy_p2_c2",
+        "text": "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+        "source": "security_policy.pdf",
+        "page": 2,
+        "chunk": 2,
+        "distance": 0.2725,
+        "score": 0.7275
+      },
+      {
+        "id": "company_handbook_p15_c1",
+        "text": "customer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to\nunauthorized persons, whether inside or outside the company, except as\nrequired to perform job duties.\nThe obligation of confidentiality survives the termination of employment and\nremains in effect for twenty-four (24) months after the employee's last day of\nwork, unless a longer period is specified in the employment contract.\nData Classification\nClassification Description Examples Handling\nPublic\nInformation\nintended for\npublic distribution\nMarketing materials,\nblog posts\nNo restrictions\nInternal\nInformation for\nNovaTech\nemployees only\nOrg charts, internal\nannouncements\nDo not share\nexternally\nConfidential\nSensitive business\ninformation\nFinancial data,\nproduct roadmap,\ncustomer lists\nNeed-to-know basis;\nencrypted storage\n• \n•",
+        "source": "company_handbook.pdf",
+        "page": 15,
+        "chunk": 1,
+        "distance": 0.2766,
+        "score": 0.7234
+      }
+    ],
+    "id": "11",
+    "expected_answer": "Employees protect Restricted data through strict access controls, encryption at rest and in transit, audit logging, and annual data protection training. Vendors handling Restricted data must complete VSQ-Full, provide recent SOC 2 Type II audit evidence, and undergo an additional NovaTech security audit.",
+    "actual_answer": "Employee data protection rules and third-party vendor security requirements work together by limiting access to Restricted data and requiring strong safeguards:\n\n- Restricted data, including customer PII, credentials, security audits, regulatory data, penetration-test results, and incident-response evidence, may be accessed only by specifically named individuals approved by the data owner and CISO. [security_policy.pdf, p. 2]\n- It must be protected with strict access controls, encryption at rest and in transit, and audit logging. [company_handbook.pdf, p. 16]\n- Employees must complete annual data-protection training to retain access to Confidential and Restricted data. [company_handbook.pdf, p. 16]\n- Employees must use the company VPN when accessing internal systems outside the office network and must not use untrusted public Wi‑Fi without the VPN active. [company_handbook.pdf, p. 15]\n- Confidentiality obligations prohibit disclosure to unauthorized persons and continue for 24 months after employment ends, unless a longer contractual period applies. [company_handbook.pdf, p. 15]\n\nThe provided excerpts do not specify the separate security requirements imposed on third-party vendors or explain how vendor access is governed.",
+    "retrieved_context": [
+      "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaTech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.\nConfidential Information\nEmployees have access to confidential information including but not limited to:\ncustomer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to",
+      "records, data subject to specific regulatory requirements (such as GDPR special\ncategory data), penetration test results, and incident response forensic evidence.\nUnauthorized disclosure of Restricted data could result in severe financial, legal,\nor reputational damage. Access is limited to specifically named individuals\napproved by the data owner and the CISO.\n2.2 Data Classification Handling Requirements\nThe following table defines the minimum handling requirements for each\nclassification level:\nRequirement Public Internal Confidential Restricted\nRecommended",
+      "customer data, source code, product roadmaps, financial results, pricing\nstrategies, and employee data. This information must not be disclosed to\nunauthorized persons, whether inside or outside the company, except as\nrequired to perform job duties.\nThe obligation of confidentiality survives the termination of employment and\nremains in effect for twenty-four (24) months after the employee's last day of\nwork, unless a longer period is specified in the employment contract.\nData Classification\nClassification Description Examples Handling\nPublic\nInformation\nintended for\npublic distribution\nMarketing materials,\nblog posts\nNo restrictions\nInternal\nInformation for\nNovaTech\nemployees only\nOrg charts, internal\nannouncements\nDo not share\nexternally\nConfidential\nSensitive business\ninformation\nFinancial data,\nproduct roadmap,\ncustomer lists\nNeed-to-know basis;\nencrypted storage\n• \n•"
+    ],
+    "generation_time_ms": 2560.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What are the full compliance obligations of a vendor handling customer data, including assessments, certification, exceptions, and reporting changes?",
+    "answer": "A vendor handling customer data must:\n\n- Complete a security assessment before engagement and annually thereafter. The assessment level depends on the data classification:\n  - **Public or Internal:** Complete the 30-question VSQ-Lite.\n  - **Confidential:** Complete the 120-question VSQ-Full and provide evidence of a SOC 2 Type II audit completed within the past 12 months.\n  - **Restricted:** Meet all Confidential-tier requirements and undergo an on-site or virtual security audit by the NovaTech Security Team. [security_policy.pdf, p. 11]\n- Hold **SOC 2 Type II certification** if it processes, stores, or accesses customer data, and provide its most recent SOC 2 Type II report upon request. [security_policy.pdf, p. 11]\n- If it lacks SOC 2 Type II certification, obtain a temporary exception from the CISO for no more than six months, present a documented remediation plan, and agree to enhanced monitoring during the exception period. [security_policy.pdf, p. 11]\n- Notify NovaTech within **30 days** of any material changes to the findings in its most recent SOC 2 Type II report. [security_policy.pdf, p. 11]\n\nThe excerpts do not specify additional reporting obligations beyond these requirements.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 837,
+    "generated_tokens": 263,
+    "latency_seconds": 3.02,
+    "retrieved_chunks": [
+      {
+        "id": "security_policy_p11_c1",
+        "text": "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 1,
+        "distance": 0.3157,
+        "score": 0.6843
+      },
+      {
+        "id": "security_policy_p11_c0",
+        "text": "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+        "source": "security_policy.pdf",
+        "page": 11,
+        "chunk": 0,
+        "distance": 0.3172,
+        "score": 0.6828
+      },
+      {
+        "id": "company_handbook_p16_c0",
+        "text": "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+        "source": "company_handbook.pdf",
+        "page": 16,
+        "chunk": 0,
+        "distance": 0.335,
+        "score": 0.665
+      },
+      {
+        "id": "security_policy_p14_c1",
+        "text": "training covers: data classification and handling, phishing recognition, password\nhygiene, incident reporting, and acceptable use. Employees with access to\nConfidential or Restricted data must additionally complete the Advanced Data\nHandling module. Completion rates are tracked by the People Operations team\nand reported to the CISO quarterly. Employees who fail to complete mandatory\ntraining within the required timeframe will have their system access suspended\nuntil training is completed.\n11. Enforcement and Compliance\nViolations of this policy may result in disciplinary action up to and including\ntermination of employment or contract. Serious violations may also result in civil\nor criminal liability. The Security Team conducts periodic compliance audits to\nverify adherence to this policy. Audit findings are reported to the CISO and, for",
+        "source": "security_policy.pdf",
+        "page": 14,
+        "chunk": 1,
+        "distance": 0.3419,
+        "score": 0.6581
+      }
+    ],
+    "id": "12",
+    "expected_answer": "Vendors must undergo security assessment before engagement and annually. Requirements depend on data classification. Vendors accessing customer data must have SOC 2 Type II certification, provide the latest report upon request, and report material changes within 30 days. The CISO may grant a maximum six-month exception with remediation and enhanced monitoring. Contracts accessing Confidential or Restricted data require a DPA.",
+    "actual_answer": "A vendor handling customer data must:\n\n- Complete a security assessment before engagement and annually thereafter. The assessment level depends on the data classification:\n  - **Public or Internal:** Complete the 30-question VSQ-Lite.\n  - **Confidential:** Complete the 120-question VSQ-Full and provide evidence of a SOC 2 Type II audit completed within the past 12 months.\n  - **Restricted:** Meet all Confidential-tier requirements and undergo an on-site or virtual security audit by the NovaTech Security Team. [security_policy.pdf, p. 11]\n- Hold **SOC 2 Type II certification** if it processes, stores, or accesses customer data, and provide its most recent SOC 2 Type II report upon request. [security_policy.pdf, p. 11]\n- If it lacks SOC 2 Type II certification, obtain a temporary exception from the CISO for no more than six months, present a documented remediation plan, and agree to enhanced monitoring during the exception period. [security_policy.pdf, p. 11]\n- Notify NovaTech within **30 days** of any material changes to the findings in its most recent SOC 2 Type II report. [security_policy.pdf, p. 11]\n\nThe excerpts do not specify additional reporting obligations beyond these requirements.",
+    "retrieved_context": [
+      "requirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications\nSOC 2 Type II certification is mandatory for all vendors who process, store, or\nhave access to customer data. Vendors must provide their most recent SOC 2\nType II report upon request and must notify NovaTech within 30 days of any\nmaterial changes to the findings in their most recent report. Vendors who do not\nhold SOC 2 Type II certification may be granted a temporary exception\n(maximum 6 months) by the CISO, provided they present a documented\nremediation plan and agree to an enhanced monitoring program during the\nexception period.\n7.3 Contractual Requirements\nAll vendor contracts involving access to Confidential or Restricted data must\ninclude: a data processing agreement (DPA) that specifies the scope and purpose",
+      "7. Vendor Security Requirements\n7.1 Vendor Risk Assessment\nAll third-party vendors who access, process, or store NovaTech data must\ncomplete a security assessment before engagement and annually thereafter. The\ndepth of the assessment is determined by the classification of data the vendor\nwill handle:\nVendors handling Public or Internal data: Must complete the NovaTech\nVendor Security Questionnaire (VSQ-Lite, 30 questions).\nVendors handling Confidential data: Must complete the full NovaTech\nVendor Security Questionnaire (VSQ-Full, 120 questions) and provide\nevidence of a SOC 2 Type II audit completed within the past 12 months.\nVendors handling Restricted data: Must meet all Confidential-tier\nrequirements plus undergo an on-site (or virtual) security audit conducted\nby the NovaTech Security Team.\n7.2 Mandatory Certifications",
+      "Classification Description Examples Handling\nRestricted\nHighly sensitive\ndata\nCustomer PII,\ncredentials, security\naudits\nStrict access\ncontrols; encrypted\nat rest and in transit;\naudit logging\nAll employees must complete the annual data protection training\n(administered via NovaLearn in February each year) to maintain access to\nConfidential and Restricted data.\n13. Health and Safety\nNovaTech Solutions is committed to providing a safe and healthy working\nenvironment in all of our offices. Office-specific health and safety information,\nincluding evacuation routes, first-aid stations, and emergency contacts, is posted\non each floor and available on the company intranet.\nErgonomics\nEmployees may request an ergonomic assessment of their workstation at any\ntime by submitting a request through the IT Service Portal. Assessments are",
+      "training covers: data classification and handling, phishing recognition, password\nhygiene, incident reporting, and acceptable use. Employees with access to\nConfidential or Restricted data must additionally complete the Advanced Data\nHandling module. Completion rates are tracked by the People Operations team\nand reported to the CISO quarterly. Employees who fail to complete mandatory\ntraining within the required timeframe will have their system access suspended\nuntil training is completed.\n11. Enforcement and Compliance\nViolations of this policy may result in disciplinary action up to and including\ntermination of employment or contract. Serious violations may also result in civil\nor criminal liability. The Security Team conducts periodic compliance audits to\nverify adherence to this policy. Audit findings are reported to the CISO and, for"
+    ],
+    "generation_time_ms": 3020.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What action items and responsibilities were recorded in the meeting notes, and how do they relate to the company's business priorities?",
+    "answer": "The provided excerpts record these action items and responsibilities:\n\n- **Engineering hiring:** Elena Rossi requested **14 Q1 hires**—8 backend engineers, 4 frontend engineers, and 2 ML/AI specialists—to support the **ProjectHub v3.2** initiative. [meeting_notes.pdf, p. 1]\n- **Update AI/ML hiring compensation bands and post roles:** Aisha Patel was assigned to complete this by **March 7**, supporting recruitment for AI/ML capabilities. [meeting_notes.pdf, p. 9]\n- **NovaTech Copilot project plan and staffing timeline:** Marcus Weber was responsible for this by **March 19**, with a first monthly progress report due **April 10**. [meeting_notes.pdf, p. 9]\n- **Password policy communication:** Marcus was assigned company-wide communication about the password-policy change by **March 12**, supporting organizational security. [meeting_notes.pdf, p. 9]\n- **Lisbon office readiness report:** Elena was responsible for this by **March 28**, supporting operational expansion or readiness. [meeting_notes.pdf, p. 9]\n- **Pricing scenario analysis:** James Park was assigned a presentation to leadership by **March 15**, supporting commercial and pricing decisions. [meeting_notes.pdf, p. 9]\n\nOverall, the action items align with business priorities involving product development, AI/ML investment, workforce growth, cybersecurity, office operations, and pricing strategy. The excerpts do not provide further detail on the specific objectives or status of each initiative.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 758,
+    "generated_tokens": 314,
+    "latency_seconds": 5.55,
+    "retrieved_chunks": [
+      {
+        "id": "meeting_notes_p1_c0",
+        "text": "NovaTech Solutions -- Leadership\nTeam Meeting Notes\nDocument Classification: Internal -- Confidential Distribution: Leadership\nTeam Only Note-taker: Aisha Patel, Head of HR\nMeeting 1: Q1 Planning & Strategic Initiatives\nDate: January 15, 2026 Time: 10:00 -- 12:15 CET Location: Conference Room A\n(Munich HQ) / Teams hybrid Attendees: - Sarah Chen (CEO) -- in person - Marcus\nWeber (CTO) -- in person - Elena Rossi (VP Engineering) -- remote (Milan) - James\nPark (VP Sales) -- remote (London) - Aisha Patel (Head of HR) -- in person\n1. Q1 Hiring Targets\nSarah opened with an overview of headcount planning for Q1. Current employee\ncount stands at 396 as of January 1, with approved budget for 28 new hires\nacross departments.\nEngineering (Elena): Requested 14 new hires -- 8 backend engineers, 4\nfrontend, and 2 ML/AI specialists. Elena emphasized that the ProjectHub v3.2",
+        "source": "meeting_notes.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.3461,
+        "score": 0.6539
+      },
+      {
+        "id": "security_policy_p7_c3",
+        "text": "documented in real time. The team distinguishes between short-term\ncontainment (immediate actions to stop ongoing damage) and long-term\ncontainment (measures to maintain business operations while preparing for\neradication).",
+        "source": "security_policy.pdf",
+        "page": 7,
+        "chunk": 3,
+        "distance": 0.3989,
+        "score": 0.6011
+      },
+      {
+        "id": "meeting_notes_p9_c2",
+        "text": "Company-wide communication on password policy change | Marcus | Mar 12 | |\n3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 | | 3.6 |\nPost AI/ML specialist roles with updated comp bands | Aisha | Mar 7 | | 3.7 |\nLisbon office readiness report | Elena | Mar 28 | | 3.8 | Monthly Copilot progress\nreport (first) | Marcus | Apr 10 | | 3.9 | Pricing scenario analysis presentation to\nleadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective\ndates.",
+        "source": "meeting_notes.pdf",
+        "page": 9,
+        "chunk": 2,
+        "distance": 0.4108,
+        "score": 0.5892
+      },
+      {
+        "id": "company_handbook_p13_c0",
+        "text": "Retaliation against employees who report concerns in good faith is strictly\nprohibited and will result in disciplinary action up to and including termination.\nConflicts of Interest\nEmployees must disclose any personal, financial, or familial relationships that\ncould create a conflict of interest with their NovaTech responsibilities. This\nincludes but is not limited to: outside employment with competitors or\ncustomers, significant financial interests in companies that do business with\nNovaTech, and personal relationships with individuals who report to or are\nmanaged by the employee.\nDisclosures should be submitted to HR using the Conflict of Interest Declaration\nform in NovaHR. Disclosures are reviewed by the Legal department, which will\nadvise on any necessary mitigations.\nUse of Company Resources\nCompany resources — including equipment, software licenses, email, and",
+        "source": "company_handbook.pdf",
+        "page": 13,
+        "chunk": 0,
+        "distance": 0.4128,
+        "score": 0.5872
+      }
+    ],
+    "id": "13",
+    "expected_answer": "The leadership meetings assigned action items supporting hiring, expansion, product reliability, CRM migration, security and AI development. Aisha Patel was responsible for recruiting timelines, Lisbon compensation bands, security training vendor selection and employee policy updates. Elena Rossi handled AI specialist job descriptions, launch readiness, the ProjectHub v3.2 reporting fix and Lisbon office readiness. Marcus Weber was responsible for secure coding training, technical integrations, password policy changes and the NovaTech Copilot project plan. James Park handled CRM vendor comparisons, HubSpot implementation, pricing scenarios and related business analysis. Sarah Chen shared responsibility for communicating remote work policy changes. These actions supported the company's priorities of scaling operations, improving products, strengthening security and growing revenue.",
+    "actual_answer": "The provided excerpts record these action items and responsibilities:\n\n- **Engineering hiring:** Elena Rossi requested **14 Q1 hires**—8 backend engineers, 4 frontend engineers, and 2 ML/AI specialists—to support the **ProjectHub v3.2** initiative. [meeting_notes.pdf, p. 1]\n- **Update AI/ML hiring compensation bands and post roles:** Aisha Patel was assigned to complete this by **March 7**, supporting recruitment for AI/ML capabilities. [meeting_notes.pdf, p. 9]\n- **NovaTech Copilot project plan and staffing timeline:** Marcus Weber was responsible for this by **March 19**, with a first monthly progress report due **April 10**. [meeting_notes.pdf, p. 9]\n- **Password policy communication:** Marcus was assigned company-wide communication about the password-policy change by **March 12**, supporting organizational security. [meeting_notes.pdf, p. 9]\n- **Lisbon office readiness report:** Elena was responsible for this by **March 28**, supporting operational expansion or readiness. [meeting_notes.pdf, p. 9]\n- **Pricing scenario analysis:** James Park was assigned a presentation to leadership by **March 15**, supporting commercial and pricing decisions. [meeting_notes.pdf, p. 9]\n\nOverall, the action items align with business priorities involving product development, AI/ML investment, workforce growth, cybersecurity, office operations, and pricing strategy. The excerpts do not provide further detail on the specific objectives or status of each initiative.",
+    "retrieved_context": [
+      "NovaTech Solutions -- Leadership\nTeam Meeting Notes\nDocument Classification: Internal -- Confidential Distribution: Leadership\nTeam Only Note-taker: Aisha Patel, Head of HR\nMeeting 1: Q1 Planning & Strategic Initiatives\nDate: January 15, 2026 Time: 10:00 -- 12:15 CET Location: Conference Room A\n(Munich HQ) / Teams hybrid Attendees: - Sarah Chen (CEO) -- in person - Marcus\nWeber (CTO) -- in person - Elena Rossi (VP Engineering) -- remote (Milan) - James\nPark (VP Sales) -- remote (London) - Aisha Patel (Head of HR) -- in person\n1. Q1 Hiring Targets\nSarah opened with an overview of headcount planning for Q1. Current employee\ncount stands at 396 as of January 1, with approved budget for 28 new hires\nacross departments.\nEngineering (Elena): Requested 14 new hires -- 8 backend engineers, 4\nfrontend, and 2 ML/AI specialists. Elena emphasized that the ProjectHub v3.2",
+      "documented in real time. The team distinguishes between short-term\ncontainment (immediate actions to stop ongoing damage) and long-term\ncontainment (measures to maintain business operations while preparing for\neradication).",
+      "Company-wide communication on password policy change | Marcus | Mar 12 | |\n3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 | | 3.6 |\nPost AI/ML specialist roles with updated comp bands | Aisha | Mar 7 | | 3.7 |\nLisbon office readiness report | Elena | Mar 28 | | 3.8 | Monthly Copilot progress\nreport (first) | Marcus | Apr 10 | | 3.9 | Pricing scenario analysis presentation to\nleadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective\ndates.",
+      "Retaliation against employees who report concerns in good faith is strictly\nprohibited and will result in disciplinary action up to and including termination.\nConflicts of Interest\nEmployees must disclose any personal, financial, or familial relationships that\ncould create a conflict of interest with their NovaTech responsibilities. This\nincludes but is not limited to: outside employment with competitors or\ncustomers, significant financial interests in companies that do business with\nNovaTech, and personal relationships with individuals who report to or are\nmanaged by the employee.\nDisclosures should be submitted to HR using the Conflict of Interest Declaration\nform in NovaHR. Disclosures are reviewed by the Legal department, which will\nadvise on any necessary mitigations.\nUse of Company Resources\nCompany resources — including equipment, software licenses, email, and"
+    ],
+    "generation_time_ms": 5550.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "What will NovaTech's exact revenue be in Q1 2030?",
+    "answer": "I could not find this information in the provided documents.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 844,
+    "generated_tokens": 14,
+    "latency_seconds": 1.31,
+    "retrieved_chunks": [
+      {
+        "id": "quarterly_report_q1_2026_p3_c1",
+        "text": "and accelerated hiring. At the current burn rate, NovaTech maintains\napproximately 16 months of runway without additional revenue growth, though\nour trajectory suggests continued cash generation. No additional fundraising is\nplanned for 2026.\n3. Customer Metrics\n3.1 Customer Base Overview\nMetric Q1 2026 Q4 2025 Q1 2025\nTotal Customers 847 821 714\nEnterprise Tier 52 48 39\nProfessional Tier 283 271 241\nStarter Tier 512 502 434\nNew Customers (Q1) 41 37 29",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 3,
+        "chunk": 1,
+        "distance": 0.2395,
+        "score": 0.7605
+      },
+      {
+        "id": "quarterly_report_q1_2026_p1_c0",
+        "text": "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.2611,
+        "score": 0.7389
+      },
+      {
+        "id": "company_handbook_p2_c0",
+        "text": "fiscal year 2025, NovaTech Solutions achieved annual recurring revenue of\napproximately €17 million.\nThis handbook outlines the policies, benefits, and expectations that apply to all\nNovaTech Solutions employees regardless of location or role. It supplements but\ndoes not replace your individual employment contract. In the event of a conflict\nbetween this handbook and your employment contract, the terms of the\nemployment contract shall prevail.\nPlease read this handbook carefully and direct any questions to your manager or\nto the Human Resources team at hr@novatech-solutions.com.\n2. Mission, Vision, and Values\nMission\nTo empower organizations with intelligent project management and analytics\ntools that turn complexity into clarity.\nVision\nBy 2030, NovaTech Solutions aims to be the leading European B2B SaaS provider\nfor integrated project intelligence, serving 10,000 enterprise customers",
+        "source": "company_handbook.pdf",
+        "page": 2,
+        "chunk": 0,
+        "distance": 0.264,
+        "score": 0.736
+      },
+      {
+        "id": "quarterly_report_q1_2026_p12_c1",
+        "text": "compute environment for NovaTech Copilot development and deployment.\nEstimated Q2-Q3 cost: EUR 280K. This investment is critical to maintaining\nour AI development velocity and avoiding dependency on third-party API\nproviders for production model serving.\nAppendix A: Q1 2026 Financial Statements\nSummary\nDetailed financial statements are provided under separate cover by the Finance\ndepartment.\nLine Item Q1 2026 (EUR)\nSubscription Revenue 4,370,000\nProfessional Services Revenue 240,000\nOther Revenue 190,000\nTotal Revenue 4,800,000\nCost of Revenue (1,056,000)\nGross Profit 3,744,000\nGross Margin 78.0%\n5. \n1. \n2. \n3.",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 12,
+        "chunk": 1,
+        "distance": 0.2864,
+        "score": 0.7136
+      }
+    ],
+    "id": "14",
+    "expected_answer": "The exact revenue for Q1 2030 is not provided and cannot be determined from the documents.",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "retrieved_context": [
+      "and accelerated hiring. At the current burn rate, NovaTech maintains\napproximately 16 months of runway without additional revenue growth, though\nour trajectory suggests continued cash generation. No additional fundraising is\nplanned for 2026.\n3. Customer Metrics\n3.1 Customer Base Overview\nMetric Q1 2026 Q4 2025 Q1 2025\nTotal Customers 847 821 714\nEnterprise Tier 52 48 39\nProfessional Tier 283 271 241\nStarter Tier 512 502 434\nNew Customers (Q1) 41 37 29",
+      "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+      "fiscal year 2025, NovaTech Solutions achieved annual recurring revenue of\napproximately €17 million.\nThis handbook outlines the policies, benefits, and expectations that apply to all\nNovaTech Solutions employees regardless of location or role. It supplements but\ndoes not replace your individual employment contract. In the event of a conflict\nbetween this handbook and your employment contract, the terms of the\nemployment contract shall prevail.\nPlease read this handbook carefully and direct any questions to your manager or\nto the Human Resources team at hr@novatech-solutions.com.\n2. Mission, Vision, and Values\nMission\nTo empower organizations with intelligent project management and analytics\ntools that turn complexity into clarity.\nVision\nBy 2030, NovaTech Solutions aims to be the leading European B2B SaaS provider\nfor integrated project intelligence, serving 10,000 enterprise customers",
+      "compute environment for NovaTech Copilot development and deployment.\nEstimated Q2-Q3 cost: EUR 280K. This investment is critical to maintaining\nour AI development velocity and avoiding dependency on third-party API\nproviders for production model serving.\nAppendix A: Q1 2026 Financial Statements\nSummary\nDetailed financial statements are provided under separate cover by the Finance\ndepartment.\nLine Item Q1 2026 (EUR)\nSubscription Revenue 4,370,000\nProfessional Services Revenue 240,000\nOther Revenue 190,000\nTotal Revenue 4,800,000\nCost of Revenue (1,056,000)\nGross Profit 3,744,000\nGross Margin 78.0%\n5. \n1. \n2. \n3."
+    ],
+    "generation_time_ms": 1310.0,
+    "passed": null,
+    "rating_note": ""
+  },
+  {
+    "question": "Who will be the CEO of NovaTech in the year 2035?",
+    "answer": "I could not find this information in the provided documents.",
+    "model": "gpt-5.6-luna",
+    "thinking": false,
+    "finish_reason": "stop",
+    "prompt_tokens": 832,
+    "generated_tokens": 14,
+    "latency_seconds": 3.25,
+    "retrieved_chunks": [
+      {
+        "id": "company_handbook_p2_c0",
+        "text": "fiscal year 2025, NovaTech Solutions achieved annual recurring revenue of\napproximately €17 million.\nThis handbook outlines the policies, benefits, and expectations that apply to all\nNovaTech Solutions employees regardless of location or role. It supplements but\ndoes not replace your individual employment contract. In the event of a conflict\nbetween this handbook and your employment contract, the terms of the\nemployment contract shall prevail.\nPlease read this handbook carefully and direct any questions to your manager or\nto the Human Resources team at hr@novatech-solutions.com.\n2. Mission, Vision, and Values\nMission\nTo empower organizations with intelligent project management and analytics\ntools that turn complexity into clarity.\nVision\nBy 2030, NovaTech Solutions aims to be the leading European B2B SaaS provider\nfor integrated project intelligence, serving 10,000 enterprise customers",
+        "source": "company_handbook.pdf",
+        "page": 2,
+        "chunk": 0,
+        "distance": 0.2996,
+        "score": 0.7004
+      },
+      {
+        "id": "quarterly_report_q1_2026_p1_c0",
+        "text": "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 1,
+        "chunk": 0,
+        "distance": 0.3024,
+        "score": 0.6976
+      },
+      {
+        "id": "meeting_notes_p9_c2",
+        "text": "Company-wide communication on password policy change | Marcus | Mar 12 | |\n3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 | | 3.6 |\nPost AI/ML specialist roles with updated comp bands | Aisha | Mar 7 | | 3.7 |\nLisbon office readiness report | Elena | Mar 28 | | 3.8 | Monthly Copilot progress\nreport (first) | Marcus | Apr 10 | | 3.9 | Pricing scenario analysis presentation to\nleadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective\ndates.",
+        "source": "meeting_notes.pdf",
+        "page": 9,
+        "chunk": 2,
+        "distance": 0.3121,
+        "score": 0.6879
+      },
+      {
+        "id": "quarterly_report_q1_2026_p3_c1",
+        "text": "and accelerated hiring. At the current burn rate, NovaTech maintains\napproximately 16 months of runway without additional revenue growth, though\nour trajectory suggests continued cash generation. No additional fundraising is\nplanned for 2026.\n3. Customer Metrics\n3.1 Customer Base Overview\nMetric Q1 2026 Q4 2025 Q1 2025\nTotal Customers 847 821 714\nEnterprise Tier 52 48 39\nProfessional Tier 283 271 241\nStarter Tier 512 502 434\nNew Customers (Q1) 41 37 29",
+        "source": "quarterly_report_q1_2026.pdf",
+        "page": 3,
+        "chunk": 1,
+        "distance": 0.3209,
+        "score": 0.6791
+      }
+    ],
+    "id": "15",
+    "expected_answer": "The identity of NovaTech's CEO in 2035 cannot be determined from the documents.",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "retrieved_context": [
+      "fiscal year 2025, NovaTech Solutions achieved annual recurring revenue of\napproximately €17 million.\nThis handbook outlines the policies, benefits, and expectations that apply to all\nNovaTech Solutions employees regardless of location or role. It supplements but\ndoes not replace your individual employment contract. In the event of a conflict\nbetween this handbook and your employment contract, the terms of the\nemployment contract shall prevail.\nPlease read this handbook carefully and direct any questions to your manager or\nto the Human Resources team at hr@novatech-solutions.com.\n2. Mission, Vision, and Values\nMission\nTo empower organizations with intelligent project management and analytics\ntools that turn complexity into clarity.\nVision\nBy 2030, NovaTech Solutions aims to be the leading European B2B SaaS provider\nfor integrated project intelligence, serving 10,000 enterprise customers",
+      "NovaTech Solutions -- Quarterly\nBusiness Report\nQ1 2026 (January -- March)\nClassification: Internal -- Board & Leadership Distribution Only\nPrepared by: Office of the CFO | Approved by: Sarah Chen, CEO\nReport Date: April 14, 2026\n1. Executive Summary\nNovaTech Solutions delivered a strong first quarter in 2026, continuing the\ngrowth trajectory established in the second half of 2025. Annual Recurring\nRevenue (ARR) reached EUR 18.2 million at quarter-end, representing a 23%\nyear-over-year increase from EUR 14.8 million at the close of Q1 2025. Quarterly\nrecognized revenue came in at EUR 4.8 million, exceeding our internal forecast of\nEUR 4.6 million by approximately 4%.\nSeveral factors contributed to this outperformance. The launch of ProjectHub\nv3.2 in February, which introduced our first AI-powered features, drove\nmeaningful upsell activity among existing Enterprise accounts. Net Revenue",
+      "Company-wide communication on password policy change | Marcus | Mar 12 | |\n3.5 | NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19 | | 3.6 |\nPost AI/ML specialist roles with updated comp bands | Aisha | Mar 7 | | 3.7 |\nLisbon office readiness report | Elena | Mar 28 | | 3.8 | Monthly Copilot progress\nreport (first) | Marcus | Apr 10 | | 3.9 | Pricing scenario analysis presentation to\nleadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective\ndates.",
+      "and accelerated hiring. At the current burn rate, NovaTech maintains\napproximately 16 months of runway without additional revenue growth, though\nour trajectory suggests continued cash generation. No additional fundraising is\nplanned for 2026.\n3. Customer Metrics\n3.1 Customer Base Overview\nMetric Q1 2026 Q4 2025 Q1 2025\nTotal Customers 847 821 714\nEnterprise Tier 52 48 39\nProfessional Tier 283 271 241\nStarter Tier 512 502 434\nNew Customers (Q1) 41 37 29"
+    ],
+    "generation_time_ms": 3250.0,
+    "passed": null,
+    "rating_note": ""
+  }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "id": "1",
+    "question": "How often must vendors complete a security assessment?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 4150.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output aligns perfectly with the retrieval context. Great job!",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question about vendor security assessment frequency and includes no irrelevant statements. It can’t be higher since 1.00 is already perfect.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.07692307692307693,
+        "success": false,
+        "reason": "The score is 0.08 because most of the retrieved text is off-topic, focusing on things like “assessment depth and data classification,” “SOC 2 Type II certification,” and “Annual 4-hour security awareness training,” which do not answer the frequency question. Only one statement directly helps: “All third-party vendors who access, process, or store NovaTech data must complete a security assessment before engagement and annually thereafter,” while the audit line “Vendors must undergo an on-site (or virtual) security audit” is related but not the same as asking how often the assessment must be completed.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 1 in retrieval context, which states that a security assessment must be completed before engagement and annually thereafter. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the relevant retrieval context nodes are ranked first and second, and both directly state that vendors \"must complete a security assessment before engagement and annually thereafter.\" The irrelevant retrieval context nodes are correctly placed lower at third and fourth since they discuss \"Annual 4-hour security awareness training\" and \"Phase 1 — Detection and Reporting,\" which are unrelated to vendor security assessment timing.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "2",
+    "question": "Which security questionnaire is required for vendors handling Public or Internal data?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1620.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.5,
+        "success": false,
+        "reason": "The score is 0.50 because the actual output mentions a file named security_policy.pdf and a page number, but the retrieval context does not include either, so that claim cannot be verified from the provided facts.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response is fully relevant to the question and contains no irrelevant statements. It directly addresses the vendor security questionnaire requirement for Public or Internal data, so it cannot be higher.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.2222222222222222,
+        "success": false,
+        "reason": "The score is 0.22 because most of the retrieval context is about unrelated items like \"Confidential data\" and the \"VSQ-Full, 120 questions,\" \"Restricted data\" and additional audit requirements, and even non-security topics like \"health and safety information\" and \"an ergonomic assessment.\" Only one key statement directly answers the question: \"Vendors handling Public or Internal data must complete the NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions).\"",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 1 in retrieval context, which matches the key text exactly about the NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions). Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the relevant retrieval context nodes are ranked first and second: the 1st node says \"Vendors handling Public or Internal data: Must complete the NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions),\" and the 2nd node still points to the same Public/Internal policy area. The irrelevant nodes are correctly ranked lower at 3rd and 4th because they focus on \"SOC 2 Type II certification\" for \"Confidential or Restricted data\" and on \"Restricted\" data/employee training, which do not answer the question.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "3",
+    "question": "What VPN client is installed on company devices?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1200.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.5,
+        "success": false,
+        "reason": "The score is 0.50 because the actual output cites company_handbook.pdf and page 15, but the retrieval context does not mention that document or page, so the citation claim is unsupported by the provided facts.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response was fully relevant to the question and contained no irrelevant statements; it directly addressed the VPN client installed on company devices.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.13043478260869565,
+        "success": false,
+        "reason": "The score is 0.13 because most of the retrieved text is about unrelated policies like \"GDPR\", \"Microsoft Intune\", and \"BitLocker for Windows, FileVault for macOS\", which do not answer the question. However, one relevant statement does directly answer it: \"The VPN client (WireGuard) is pre-installed on all company devices.\"",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is directly supported by node 1 in retrieval context, which explicitly states that WireGuard is pre-installed on all company devices. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the first node in retrieval contexts directly answers the question with \"The VPN client (WireGuard) is pre-installed on all company devices,\" and the irrelevant nodes are correctly ranked lower since they only discuss \"Device Management\"/\"Microsoft Intune,\" \"Installing unauthorized software,\" or software approvals like \"GitHub/Vault\" without naming the VPN client.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "4",
+    "question": "When do employees complete annual data protection training?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1480.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.6666666666666666,
+        "success": false,
+        "reason": "The score is 0.67 because the actual output adds an unverified source attribution (“company_handbook.pdf” and “page 16”) that is not mentioned in the retrieval context, so that detail cannot be confirmed from the provided facts.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 0.5,
+        "success": false,
+        "reason": "The score is 0.50 because the response includes some relevant context, but it does not directly answer when employees complete the annual data protection training and instead focuses on the training platform (NovaLearn). It gets partial credit for being on-topic, but cannot score higher since the actual timing is missing.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.38095238095238093,
+        "success": false,
+        "reason": "The score is 0.38 because most of the retrieval context is unrelated to the timing question, such as the irrelevant parts about 'Violations of this policy may result in disciplinary action up to and including termination of employment or contract' and 'The Security Team conducts periodic compliance audits to verify adherence to this policy'. However, it does include some directly relevant timing details, like 'All employees must complete the annual data protection training (administered via NovaLearn in February each year)' and 'All NovaTech employees must complete the Information Security Awareness training within 30 days of joining the Company and annually thereafter.'",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 2 in retrieval context, which explicitly says the training is administered via NovaLearn in February each year. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.5,
+        "success": false,
+        "reason": "The score is 0.50 because the relevant nodes are not consistently ranked above the irrelevant nodes. The 1st node in the retrieval contexts is irrelevant: it talks about training topics and being 'within the required timeframe' but does not answer when annual data protection training is completed, so it should be ranked lower than the relevant nodes. The 2nd node is correctly relevant and directly states 'All employees must complete the annual data protection training (administered via NovaLearn in February each year)'. The 3rd node is again irrelevant because it describes a different program, 'Annual 4-hour security awareness training' with 'launch by April 1', not the annual data protection training. The 4th node is relevant since it says training is completed 'annually thereafter', but it is less specific than the 2nd node because it does not give 'February' or 'NovaLearn'. The score is not higher because an irrelevant node appears before a relevant one, but it is not lower because the most direct answer is still present near the top and the later relevant node provides supporting timing context.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "5",
+    "question": "What is the purpose of the NovaTech Vendor Security Questionnaire?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1350.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because the actual output says the AI could not find the information in the documents, but the retrieval context does not mention any such statement, making that claim unsupported and unfaithful to the provided text.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because the response fails to answer the question about the purpose of the NovaTech Vendor Security Questionnaire and only says the information could not be found in the documents. It is not higher because it provides no relevant explanation or useful details, though it is somewhat related by addressing the same topic.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.37142857142857144,
+        "success": false,
+        "reason": "The score is 0.37 because much of the context is about unrelated policy or company background, such as \"7.2 Mandatory Certifications\" and \"Company Overview,\" which \"does not explain the purpose of the NovaTech Vendor Security Questionnaire.\" However, it does include directly relevant details like \"All third-party vendors who access, process, or store NovaTech data must complete a security assessment\" and \"Vendors handling Public or Internal data must complete the NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions),\" so the context is only partially relevant.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 1 in retrieval context, which directly states vendors must complete a security assessment before engagement and annually thereafter based on the classification of data they will handle. Great match.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8333333333333333,
+        "success": true,
+        "reason": "The score is 0.83 because the most relevant retrieval contexts are ranked well overall: the 1st node in the retrieval contexts directly says vendors \"must complete a security assessment before engagement and annually thereafter\" and that it depends on \"the classification of data the vendor will handle,\" and the 3rd node in the retrieval contexts reinforces this by contrasting \"Public or Internal data\" with \"Confidential data.\" It is not higher because the 2nd node in the retrieval contexts is irrelevant general policy material about \"Purpose and Scope\" that does not mention the NovaTech Vendor Security Questionnaire, and the 4th node in the retrieval contexts is also irrelevant marketing/website content with no vendor-assessment focus. Since a relevant node appears before some irrelevant nodes, the ordering is strong but not perfect.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "6",
+    "question": "How do vendor security requirements differ for Public, Confidential, and Restricted data?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 2140.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context. Great job!",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses how vendor security requirements differ for Public, Confidential, and Restricted data, with no irrelevant statements or off-topic content.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.7894736842105263,
+        "success": true,
+        "reason": "The score is 0.79 because the context mostly answers the question by stating that vendor requirements vary by classification: \"Vendors handling Public or Internal data must complete the NovaTech Vendor Security Questionnaire (VSQ-Lite, 30 questions),\" \"Vendors handling Confidential data must complete the full NovaTech Vendor Security Questionnaire (VSQ-Full, 120 questions) and provide evidence of a SOC 2 Type II audit,\" and \"Vendors handling Restricted data must meet all Confidential-tier requirements plus undergo an on-site (or virtual) security audit.\" However, some retrieved text is off-topic or only partial, such as \"7.2 Mandatory Certifications,\" \"Recommended,\" and \"project documentation, organizational charts, internal process guides, and meeting notes,\" which lowers the score slightly.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 1 in retrieval context: Public/Internal requires VSQ-Lite (30 questions), Confidential requires VSQ-Full (120 questions) plus SOC 2 Type II audit evidence from the past 12 months, and Restricted adds the NovaTech Security Team security audit. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8333333333333333,
+        "success": true,
+        "reason": "The score is 0.83 because the most relevant retrieval context nodes are ranked highly, with the 1st node directly answering the question using \"VSQ-Lite,\" \"VSQ-Full,\" and the restricted-data security audit, and the 3rd node reinforcing the key vendor rules with \"Confidential or Restricted data\" and the audit requirement. However, it is not higher because irrelevant nodes appear in the 2nd and 4th positions: the 2nd node is about data classification and handling rather than vendor security requirements, and the 4th node only defines \"Confidential\" and \"Restricted\" data without explaining the vendor requirements. Those irrelevant nodes should be ranked lower than the relevant nodes, which is why the score is strong but not perfect.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "8",
+    "question": "What security precautions must employees follow when connecting to company systems remotely?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1410.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context. Great job!",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response stayed fully focused on the security precautions employees must follow when connecting remotely, with no irrelevant statements to reduce relevance.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.3333333333333333,
+        "success": false,
+        "reason": "The score is 0.33 because the context is mostly about unrelated HR, privacy, and workplace topics like \"processes personal data in compliance with GDPR,\" \"safe and healthy working environment,\" and \"stable internet connection,\" but it does include a few directly relevant security rules such as \"The company VPN must be used when accessing internal systems from outside the office network\" and \"Employees must not connect company devices to untrusted public Wi-Fi networks without the VPN active.\"",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the single sentence in the expected output is fully supported by node 1 in retrieval context, which explicitly states both that the company VPN must be used when accessing internal systems outside the office and that company devices must not connect to untrusted public Wi‑Fi without the VPN active. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8333333333333333,
+        "success": true,
+        "reason": "The score is 0.83 because the most relevant nodes are placed high, but not perfectly first: node 1 directly answers the question with 'The company VPN must be used when accessing internal systems from outside the office network' and 'Employees must not connect company devices to untrusted public Wi-Fi networks without the VPN active,' and node 3 also supports this with 'including the use of the company VPN for accessing internal systems.' However, irrelevant nodes still appear in the ranking before and after the useful ones: node 2 focuses on 'Data Protection and Confidentiality' and GDPR/CCPA rather than remote connection precautions, and node 4 only says 'The IT policies outlined below are mandatory for all employees and contractors' without naming VPN or public Wi‑Fi rules. This makes the ranking good but not fully precise.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "7",
+    "question": "Under what conditions can vendors receive an exception to SOC 2 Type II certification?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1780.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context. Great job!",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addressed the question without any irrelevant content, so it was as relevant as possible.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.35,
+        "success": false,
+        "reason": "The score is 0.35 because the context does include the key exception rule that vendors without SOC 2 Type II may get a temporary exception, but only if they have 'a documented remediation plan' and 'agree to an enhanced monitoring program during the exception period.' However, much of the surrounding material is off-topic, such as 'requirements plus undergo an on-site (or virtual) security audit conducted by the NovaTech Security Team' and incident-response details like 'acknowledgment within 1 hour' and 'must be engaged within 1 hour,' which do not answer the question about exception conditions.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because sentence 1 is fully supported by node 1 in retrieval context: it states the CISO may grant a temporary exception for up to six months when the vendor provides a documented remediation plan and agrees to enhanced monitoring, matching the expected output exactly. Great match!",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the most relevant nodes in retrieval contexts are ranked first: the 1st node directly states vendors without SOC 2 Type II \"may be granted a temporary exception (maximum 6 months) by the CISO\" if they \"present a documented remediation plan\" and \"agree to an enhanced monitoring program,\" and the 2nd node also supports the certification requirement by pointing to \"7.2 Mandatory Certifications\" and noting vendors must provide \"evidence of a SOC 2 Type II audit.\" The irrelevant nodes are already ranked lower: the 3rd node is about incident response timing, and the 4th node is about data classification and access controls, so they do not interfere with the top ranking. That perfect ordering is why the score is not lower and remains at 1.00.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "10",
+    "question": "What product features and support procedures are described in the product guide?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 3070.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions, so the actual output aligns perfectly with the retrieval context. Great job!",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response is fully relevant to the question and there are no irrelevant statements to reduce its quality. It addresses the product features and support procedures directly and completely.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.7272727272727273,
+        "success": true,
+        "reason": "The score is 0.73 because the retrieval context does include useful product details like \"includes features, pricing, technical specifications, and integration capabilities\" and a table of contents with \"Support and Onboarding,\" but it also contains unrelated company/background material such as \"headquartered in Munich, Germany\" and \"founded in 2017,\" plus classification-policy text that is not about the product guide's features or support procedures.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 0.14285714285714285,
+        "success": false,
+        "reason": "The score is 0.14 because only sentence 1 is supported by node 1 in retrieval context, which mentions NovaTech ProjectHub and NovaTech Insight plus features, pricing, technical specifications, and integration capabilities. Sentences 2–6 are unsupported: node 1 only shows a contents-style reference to support/onboarding, but no node provides the onboarding durations, training programs, tiered support details, or professional services listed.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8055555555555555,
+        "success": true,
+        "reason": "The score is 0.81 because the most relevant retrieval contexts are mostly ranked well: the 1st node in the retrieval contexts directly matches the guide, saying it covers 'features, pricing, technical specifications, and integration capabilities,' and the 3rd and 4th nodes add concrete product details like 'AI Task Prioritization Engine,' 'Smart Dependency Mapping,' 'Enhanced Gantt View,' 'Webhook API v2,' and 'native reporting module.' However, it is not higher because the 2nd node in the retrieval contexts is an irrelevant document about 'Data Classification' and 'Public'/'Internal' levels, which appears before some relevant nodes and slightly disrupts the ranking order. The score is still strong because the relevant nodes are concentrated near the top and clearly support answering the product guide question.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "9",
+    "question": "What were the main financial results reported for Q1 2026?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 2100.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.8947368421052632,
+        "success": true,
+        "reason": "The score is 0.89 because the actual output appears to add unsupported year-over-year details: it treats ARPA as if a prior-year comparison or YoY percentage were given, and it also references NRR for Q1 2025 even though the context only states ARPA was EUR 21,488 and NRR was 112% in Q1 2026.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response is fully focused on the main financial results for Q1 2026 and contains no irrelevant statements. It matches the input well and couldn’t reasonably be more relevant.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.7222222222222222,
+        "success": true,
+        "reason": "The score is 0.72 because the context contains the needed Q1 2026 financials like \"Quarterly Revenue for Q1 2026 was EUR 4.8M\" and \"Operating Income 280,000,\" but it also includes a lot of unrelated operational content such as \"The launch of ProjectHub v3.2 in February,\" \"Customer Count 847 830 Above target,\" and \"Platform Uptime 99.97% 99.9% Above target,\" which lowers relevance.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because all details in the single expected sentence are fully supported by nodes in retrieval context: node 1 and node 3 confirm quarterly revenue of EUR 4.8M vs EUR 4.6M forecast, ARR of EUR 18.2M with 23% YoY growth, and node 3 also gives ARPA of EUR 21,488 plus net revenue retention of 112%.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8055555555555555,
+        "success": true,
+        "reason": "The score is 0.81 because the first node in the retrieval contexts directly answers the question with \"Annual Recurring Revenue (ARR) reached EUR 18.2 million\" and \"Quarterly recognized revenue came in at EUR 4.8 million\". The score is not higher because the second node in the retrieval contexts is irrelevant and only mentions \"Next quarterly report: Q2 2026, scheduled for publication July 14, 2026,\" so it should be ranked below the Q1 financial results. Still, the score is fairly high because the relevant information appears again in the third and fourth nodes in the retrieval contexts, including \"Quarterly Revenue EUR 4.8M,\" \"ARR EUR 18.2M,\" and \"Net Revenue Retention 112%,\" showing that the useful nodes are mostly ranked above the irrelevant one.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "12",
+    "question": "What are the full compliance obligations of a vendor handling customer data, including assessments, certification, exceptions, and reporting changes?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 3020.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.9166666666666666,
+        "success": true,
+        "reason": "The score is 0.92 because the output mostly aligns with the SOC 2 Type II obligations in the context, but it overstates them as if they were the only reporting obligations, even though the context does not say that additional obligations could not also exist.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response is fully aligned with the input and addresses the vendor’s compliance obligations without any irrelevant content. It cannot be higher since the answer is already completely relevant and on target.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.875,
+        "success": true,
+        "reason": "The score is 0.88 because most of the retrieval context directly matches the vendor-compliance question, including that vendors must complete a security assessment, undergo an audit, hold “SOC 2 Type II certification,” may receive a temporary exception, and must “notify NovaTech within 30 days of any material changes.” The only irrelevant parts are the workplace-safety details such as “providing a safe and healthy working environment,” “evacuation routes, first-aid stations, and emergency contacts,” and “ergonomic assessment of their workstation,” which are unrelated to customer data compliance.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in retrieval context: sentence 1 is covered by node 2 on security assessment timing, sentence 2 by node 2 on data-classification-based requirements, and sentences 3-5 by node 1 on SOC 2 Type II, the 6-month CISO exception, and the DPA requirement. No sentence is left unsupported.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the first and second nodes in retrieval contexts are directly relevant and ranked correctly: node 1 quotes that \"SOC 2 Type II certification is mandatory,\" vendors must \"provide their most recent SOC 2 Type II report upon request,\" \"notify NovaTech within 30 days of any material changes,\" and may receive a \"temporary exception (maximum 6 months),\" while node 2 adds that vendors \"must complete a security assessment before engagement and annually thereafter\" and may require an \"on-site (or virtual) security audit.\" The irrelevant nodes are already lower-ranked at 3 and 4, and they focus on employee training/office safety rather than vendor obligations, so there is no ranking issue to penalize. Great ordering overall.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "11",
+    "question": "How do the company's employee data protection rules and third-party vendor security requirements work together to protect Restricted data?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 2560.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.6363636363636364,
+        "success": false,
+        "reason": "The score is 0.64 because the actual output adds third-party vendor security requirements and vendor access governance that the context does not mention, and it broadens the listed restricted-data examples by referring to \"regulatory data\" and \"incident-response evidence\" more generally than the excerpt’s specific examples.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response stays fully focused on how employee data protection rules and third-party vendor security requirements work together to safeguard Restricted data, with no irrelevant statements.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.6666666666666666,
+        "success": false,
+        "reason": "The score is 0.67 because the context does include key protection controls for Restricted data, such as it “requires strict access controls, encryption at rest and in transit, and audit logging,” plus employees must complete “annual data protection training” and use the company VPN. However, some retrieved items are unrelated, like “safe and healthy working environment,” “evacuation routes, first-aid stations, and emergency contacts,” and the VPN/admin details don’t fully explain how employee rules and third-party vendor requirements work together.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 0.5,
+        "success": false,
+        "reason": "The score is 0.50 because sentence 1 is supported by node 1 in retrieval context, which mentions Restricted-data protections like strict access controls, encryption at rest/in transit, audit logging, and annual data protection training; however, sentence 2 is not supported because none of nodes 1-4 mention vendor requirements such as VSQ-Full, SOC 2 Type II evidence, or an additional NovaTech security audit.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8333333333333333,
+        "success": true,
+        "reason": "The score is 0.83 because the most relevant retrieval context nodes are ranked well overall: node 1 directly supports Restricted data protections with \"Strict access controls; encrypted at rest and in transit; audit logging\" and \"All employees must complete the annual data protection training,\" and node 3 reinforces this with \"Access is limited to specifically named individuals approved by the data owner and the CISO.\" It is not higher because an irrelevant retrieval context node appears too early at rank 2, where it only discusses general rules like \"The company VPN must be used\" and \"Confidential Information\" without Restricted data or vendor security requirements. A later irrelevant retrieval context node at rank 4 is less harmful, since it comes after the relevant node 3.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "14",
+    "question": "What will NovaTech's exact revenue be in Q1 2030?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 1310.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because the actual output makes an unsupported claim that the speaker could or could not find the information in the documents, but the retrieval context does not state this, so the claim is not verifiable from the provided facts.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response stayed fully focused on NovaTech's Q1 2030 revenue question with no irrelevant content, so it’s as relevant as possible.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.4,
+        "success": false,
+        "reason": "The score is 0.40 because the context includes some revenue-related data like \"Quarterly recognized revenue came in at EUR 4.8 million\" and \"ARR reached EUR 18.2 million,\" but it is still mostly mismatched to the question since many statements are unrelated, such as \"No additional fundraising is planned for 2026\" and details about \"ProjectHub v3.2\" and \"AI-powered features,\" and it only covers \"Q1 2026 Financial Statements\" rather than NovaTech's exact revenue in Q1 2030.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because sentence 1 cannot be attributed to any node in retrieval context: node(s) in retrieval context only mention Q1 2026 revenue figures, such as node 2 stating “Quarterly recognized revenue came in at EUR 4.8 million” and node 4 showing “Appendix A: Q1 2026 Financial Statements... Total Revenue 4,800,000,” with no node mentioning Q1 2030 revenue.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the relevant retrieval contexts are all ranked at the top: nodes 1–4 in the retrieval contexts all point to the absence of a Q1 2030 revenue figure, with quotes like 'approximately 16 months of runway', 'Quarterly recognized revenue came in at EUR 4.8 million', 'By 2030, NovaTech Solutions aims to be the leading European B2B SaaS provider', and 'Total Revenue 4,800,000'. There are no irrelevant nodes placed above them, so nothing needs to be ranked lower; this is a clean, fully aligned ranking.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "13",
+    "question": "What action items and responsibilities were recorded in the meeting notes, and how do they relate to the company's business priorities?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 5550.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.6,
+        "success": false,
+        "reason": "The score is 0.60 because the actual output overstates several details not explicitly in the context: it says Elena Rossi requested the 14 new hires when the context only says Engineering requested them and Elena attended remotely, and it adds unsupported purposes like AI/ML recruitment support, organizational security, operational expansion, commercial/pricing decisions, and an overall priority summary that the context does not state.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response would be fully relevant to the meeting notes and business priorities with no irrelevant statements, so there is no reason for the score to be lower.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.7222222222222222,
+        "success": true,
+        "reason": "The score is 0.72 because the context mixes useful meeting-note details like \"NovaTech Solutions leadership team meeting notes\" and \"Q1 hiring targets and headcount planning\" with unrelated policy text such as \"Retaliation against employees who report concerns in good faith\" and \"submit to HR using the Conflict of Interest Declaration form in NovaHR.\" The relevant action items list (for example, \"Post AI/ML specialist roles with updated comp bands | Aisha | Mar 7\" and \"NovaTech Copilot project plan and staffing timeline | Marcus | Mar 19\") shows some alignment with business priorities, but the policy-heavy content lowers the overall relevance.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 0.5714285714285714,
+        "success": false,
+        "reason": "The score is 0.57 because sentences 1, 3, and 5 are only partially grounded by nodes in retrieval context 1 and 3, which mention leadership action items, AI/hiring, product fixes, security, and pricing work, but sentences 2, 4, and 6 are not fully supported: node 1/3 do not include recruiting timelines, security training vendor selection, or employee policy updates for sentence 2; node 3 lacks secure coding training and technical integrations for sentence 4; and no node supports Sarah sharing remote work policy changes in sentence 5. The final priority summary in sentence 6 is broadly consistent with the general themes, but the missing role-specific details keep recall moderate rather than high.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 0.8055555555555555,
+        "success": true,
+        "reason": "The score is 0.81 because the most relevant retrieval context nodes are mostly ranked well: node 1 directly matches the meeting action items and business priorities with 'Q1 Hiring Targets' and 'ProjectHub v3.2', node 3 adds concrete responsibilities like 'Company-wide communication on password policy change | Marcus | Mar 12' and 'NovaTech Copilot project plan and staffing timeline', and node 4 also supports policy-related responsibilities. It is not higher because node 2 is an irrelevant retrieval context about 'short-term containment' and 'long-term containment' that appears before node 3, interrupting the ranking order and pushing a useful node lower than it should be.",
+        "error": null
+      }
+    }
+  },
+  {
+    "id": "15",
+    "question": "Who will be the CEO of NovaTech in the year 2035?",
+    "model": "gpt-5.6-luna",
+    "generation_time_ms": 3250.0,
+    "judge": "gpt-5.4-mini",
+    "metrics": {
+      "Faithfulness": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because the actual output made an unverified claim about whether the AI could or could not find the information in the provided documents, but the retrieval context does not state this either way, so it cannot be supported from the context.",
+        "error": null
+      },
+      "Answer Relevancy": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the response is fully relevant to the question and contains no irrelevant statements; it directly addresses the CEO of NovaTech in 2035 without unnecessary detours.",
+        "error": null
+      },
+      "Contextual Relevancy": {
+        "score": 0.10526315789473684,
+        "success": false,
+        "reason": "The score is 0.11 because the context is mostly unrelated to the question about 2035 leadership: it focuses on things like \"annual recurring revenue of approximately €17 million,\" \"policies, benefits, and expectations,\" and \"ProjectHub v3.2\" rather than future CEO information. The only directly relevant detail is that \"The report was approved by Sarah Chen, CEO,\" but that just identifies the current CEO, not who will be CEO in 2035.",
+        "error": null
+      },
+      "Contextual Recall": {
+        "score": 0.0,
+        "success": false,
+        "reason": "The score is 0.00 because sentence 1 is not supported by node(s) in retrieval context: node 2 only mentions \"Approved by: Sarah Chen, CEO\" in 2026, and the other nodes provide no information about NovaTech's CEO in 2035.",
+        "error": null
+      },
+      "Contextual Precision": {
+        "score": 1.0,
+        "success": true,
+        "reason": "The score is 1.00 because the relevant retrieval context nodes are ranked at the top: node 1 notes a vision for 'By 2030' but no evidence about a CEO in 2035, and node 2 says 'Approved by: Sarah Chen, CEO' on 'April 14, 2026,' which supports only the current CEO and still cannot identify the 2035 CEO. The irrelevant retrieval context nodes are correctly placed lower: node 3 is only about 'NovaTech Copilot project plan and staffing timeline' and 'Next leadership team meeting scheduled for April 2, 2026,' and node 4 is about business metrics like 'Total Customers' and 'Annual Recurring Revenue,' so neither helps answer who will be CEO in 2035.",
+        "error": null
+      }
+    }
+  }
+]
