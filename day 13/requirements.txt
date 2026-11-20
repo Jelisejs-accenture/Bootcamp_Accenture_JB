@@ -1,0 +1,4 @@
+openai>=1.75
+python-dotenv>=1.0
+tavily-python>=0.5
+ipykernel>=6.29
