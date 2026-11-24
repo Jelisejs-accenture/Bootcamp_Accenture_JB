@@ -1,0 +1,64 @@
+{
+  "execution_summary": {
+    "start_time": "2026-11-24T14:45:01.964616",
+    "end_time": "2026-11-24T14:47:02.526030",
+    "duration_seconds": 120.56,
+    "total_events": 6
+  },
+  "events": [
+    {
+      "timestamp": "2026-11-24T14:45:01.964619",
+      "event_type": "CREW_START",
+      "agent": "System",
+      "details": {
+        "message": "Crew execution started"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T14:45:01.964637",
+      "event_type": "AGENT_INIT",
+      "agent": "Casting Director",
+      "details": {
+        "tools": [
+          "role_matcher",
+          "fetch_actor_database"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-24T14:45:01.964641",
+      "event_type": "AGENT_INIT",
+      "agent": "Schedule Coordinator",
+      "details": {
+        "tools": [
+          "actor_availability_checker"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-24T14:45:01.964644",
+      "event_type": "CREW_EXECUTION",
+      "agent": "System",
+      "details": {
+        "task_count": 2
+      }
+    },
+    {
+      "timestamp": "2026-11-24T14:47:02.518747",
+      "event_type": "CREW_SUCCESS",
+      "agent": "System",
+      "details": {
+        "message": "Crew returned a result"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T14:47:02.526053",
+      "event_type": "CREW_END",
+      "agent": "System",
+      "details": {
+        "message": "Crew execution completed",
+        "duration_seconds": 120.56
+      }
+    }
+  ]
+}
